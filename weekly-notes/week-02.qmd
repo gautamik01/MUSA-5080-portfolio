@@ -1,0 +1,40 @@
+---
+title: "Week 2: Census Data"
+description: "table functions and acs data"
+date: 2026-09-04
+---
+
+## What We Did
+
+<!-- CHANGE THIS: replace with your own notes -->
+
+We learnt many codes, understood packages, PIPE (% > %) a function and it works. We also had a short class on Decennial Census and American Community Survey. 
+
+## Key Concepts
+
+Some useful functions to know:
+
+1. **PIPE** — and then do this
+2. **tibble** — modernized version of R data frame that simplifies data analysis by 
+                printing cleanly and preventing silent code errors.
+3. **Decennial Census** — every 10 years
+4. **ACS Census** - every 5 years (Most used)
+
+The loop: **Edit → Save → Render → Commit → Push → wait → refresh**
+
+## Proving R Works
+
+The chunk below runs when this page renders. If you can see a result underneath
+it on your published site, R and Quarto are talking to each other correctly.
+
+```{r}
+sessionInfo()$R.version$version.string
+```
+
+## Reflection
+- Its getting clearer and I am less scared of working with R. 
+- Typing codes by hand is helpful to uderstand whats happening. 
+
+## Questions I Still Have
+ - Difference between different formates wide, character, string, float, etc.. ? Where to use what ? 
+

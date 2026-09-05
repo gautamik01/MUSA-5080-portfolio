@@ -39,6 +39,6 @@ One thing I'm nervous about: I am new to programming and understanding syntax.
 
 ## Questions I Still Have
 
-- With AI how can we actually leverage the skill
+- With AI how can we actually leverage the skill and not just surender?
 - I am truly trying to understand what would be its applications and its possibilities?
 
