@@ -102,7 +102,7 @@
     "href": "assignments/index.html",
     "title": "Assignments",
     "section": "",
-    "text": "Completed assignments for MUSA 5080. New assignments appear here automatically once you add the .qmd file to this folder and render.\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Completed assignments for MUSA 5080. New assignments appear here automatically once you add the .qmd file to this folder and render.\n\n\n\n\n\n\n\n\n\n\n\nAssignment 2: Who Do We Know the Least About?\n\n\n\n\n\n\n\n\nSep 5, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "weekly-notes/index.html",
@@ -159,5 +159,68 @@
     "title": "Week 2: Census Data",
     "section": "Questions I Still Have",
     "text": "Questions I Still Have\n\nDifference between different formates wide, character, string, float, etc.. ? Where to use what ?"
+  },
+  {
+    "objectID": "assignments/assignment2.html",
+    "href": "assignments/assignment2.html",
+    "title": "Assignment 2: Who Do We Know the Least About?",
+    "section": "",
+    "text": "library(tidyverse)\nlibrary(tidycensus)"
+  },
+  {
+    "objectID": "assignments/assignment2.html#setup",
+    "href": "assignments/assignment2.html#setup",
+    "title": "Assignment 2: Who Do We Know the Least About?",
+    "section": "",
+    "text": "library(tidyverse)\nlibrary(tidycensus)"
+  },
+  {
+    "objectID": "assignments/assignment2.html#the-question",
+    "href": "assignments/assignment2.html#the-question",
+    "title": "Assignment 2: Who Do We Know the Least About?",
+    "section": "The question",
+    "text": "The question\nEvery number the American Community Survey publishes is an estimate drawn from a sample, not a count. That means every number comes with a margin of error — a statement about how wrong it might be.\nMost people ignore it. In this assignment, you won’t.\nIn this analysis, I look at median home value across counties in Maryland, and ask which communities we measure most and least reliably. As someone house-hunting in the Baltimore, I wanted to know how reliable home value estimates really are before treating them as fact. This matters beyond my own search as well since, shaky estimates affect property tax assessments and lending decisions too, so it’s useful for anyone relying on this data, not just buyers."
+  },
+  {
+    "objectID": "assignments/assignment2.html#choosing-what-to-measure",
+    "href": "assignments/assignment2.html#choosing-what-to-measure",
+    "title": "Assignment 2: Who Do We Know the Least About?",
+    "section": "Choosing what to measure",
+    "text": "Choosing what to measure\n\nmy_state &lt;- \"MD\"        # two-letter abbreviation, in quotes\nmy_variable &lt;- \"B25077_001\"     # the variable code, in quotes"
+  },
+  {
+    "objectID": "assignments/assignment2.html#pulling-the-data",
+    "href": "assignments/assignment2.html#pulling-the-data",
+    "title": "Assignment 2: Who Do We Know the Least About?",
+    "section": "Pulling the data",
+    "text": "Pulling the data\n\ncounty_data &lt;- get_acs(\n  geography = \"county\",\n  variables = my_variable,\n  state = my_state,\n  year = 2023,\n  survey = \"acs5\"\n)\n\nLet’s look at what came back.\n\ndim(county_data)\n\n[1] 24  5\n\nhead(county_data)\n\n# A tibble: 6 × 5\n  GEOID NAME                          variable   estimate   moe\n  &lt;chr&gt; &lt;chr&gt;                         &lt;chr&gt;         &lt;dbl&gt; &lt;dbl&gt;\n1 24001 Allegany County, Maryland     B25077_001   149200  5832\n2 24003 Anne Arundel County, Maryland B25077_001   450300  4485\n3 24005 Baltimore County, Maryland    B25077_001   330000  3148\n4 24009 Calvert County, Maryland      B25077_001   440200  8554\n5 24011 Caroline County, Maryland     B25077_001   272400  7506\n6 24013 Carroll County, Maryland      B25077_001   406400  7074\n\n\nI got 24 rows and it matches with the number of counties in the state. Since Maryland officially consists of 23 counties and 1 independent city (Baltimore City), which the Census Bureau treats as a “county equivalent”"
+  },
+  {
+    "objectID": "assignments/assignment2.html#how-big-is-the-margin-of-error",
+    "href": "assignments/assignment2.html#how-big-is-the-margin-of-error",
+    "title": "Assignment 2: Who Do We Know the Least About?",
+    "section": "How big is the margin of error?",
+    "text": "How big is the margin of error?\nA margin of error of 3,000 means something very different for an estimate of 20,000 than for an estimate of 200,000. To compare across places, we need it as a percentage.\n\ncounty_data &lt;- county_data %&gt;%\n  mutate(moe_pct = moe / estimate * 100)\n\nNow sort to see which counties are measured least reliably.\n\ncounty_data %&gt;%\n  arrange(desc(moe_pct)) %&gt;%\n  select(NAME, estimate, moe, moe_pct) %&gt;%\n  head(10)\n\n# A tibble: 10 × 4\n   NAME                          estimate   moe moe_pct\n   &lt;chr&gt;                            &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;\n 1 Somerset County, Maryland       164300 14949    9.10\n 2 Kent County, Maryland           307100 17782    5.79\n 3 Garrett County, Maryland        217000 10296    4.74\n 4 Dorchester County, Maryland     252300 11410    4.52\n 5 Talbot County, Maryland         398300 16471    4.14\n 6 Allegany County, Maryland       149200  5832    3.91\n 7 Worcester County, Maryland      348100 12766    3.67\n 8 Cecil County, Maryland          311800  8842    2.84\n 9 Caroline County, Maryland       272400  7506    2.76\n10 Queen Anne's County, Maryland   441800 10627    2.41\n\n\nThe county with the highest moe is Somerset County, Maryland. Its moe_pct is 9.098600%"
+  },
+  {
+    "objectID": "assignments/assignment2.html#sorting-counties-into-reliability-categories",
+    "href": "assignments/assignment2.html#sorting-counties-into-reliability-categories",
+    "title": "Assignment 2: Who Do We Know the Least About?",
+    "section": "Sorting counties into reliability categories",
+    "text": "Sorting counties into reliability categories\n\ncounty_data &lt;- county_data %&gt;%\n  mutate(reliability = case_when(\n    moe_pct &lt; 2  ~ \"High confidence\",\n    moe_pct &lt; 4 ~ \"Moderate\",\n    TRUE         ~ \"Low confidence\"\n  ))\n\ncount(county_data, reliability)\n\n# A tibble: 3 × 2\n  reliability         n\n  &lt;chr&gt;           &lt;int&gt;\n1 High confidence    12\n2 Low confidence      5\n3 Moderate            7\n\n\nHigh confidence reliability has 12 counties, Moderate has 7 counties and Low confidence has 5 counties"
+  },
+  {
+    "objectID": "assignments/assignment2.html#is-the-margin-of-error-bigger-in-small-places",
+    "href": "assignments/assignment2.html#is-the-margin-of-error-bigger-in-small-places",
+    "title": "Assignment 2: Who Do We Know the Least About?",
+    "section": "Is the margin of error bigger in small places?",
+    "text": "Is the margin of error bigger in small places?\nTo answer this we need population and our variable side by side, in the same row. That means a wide pull.\n\ncounty_wide &lt;- get_acs(\n  geography = \"county\",\n  variables = c(myvar = my_variable,\n                pop   = \"B01003_001\"),\n  state = my_state,\n  year = 2023,\n  survey = \"acs5\",\n  output = \"wide\"\n)\n\nhead(county_wide)\n\n# A tibble: 6 × 6\n  GEOID NAME                          myvarE myvarM   popE  popM\n  &lt;chr&gt; &lt;chr&gt;                          &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt;\n1 24001 Allegany County, Maryland     149200   5832  67762    NA\n2 24003 Anne Arundel County, Maryland 450300   4485 590936    NA\n3 24005 Baltimore County, Maryland    330000   3148 849586    NA\n4 24009 Calvert County, Maryland      440200   8554  93791    NA\n5 24011 Caroline County, Maryland     272400   7506  33406    NA\n6 24013 Carroll County, Maryland      406400   7074 174318    NA\n\n\n\ncounty_wide &lt;- county_wide %&gt;%\n  mutate(moe_pct = myvarM / myvarE * 100) %&gt;%\n  mutate(reliability = case_when(\n    moe_pct &lt; 2  ~ \"High confidence\",\n    moe_pct &lt; 4 ~ \"Moderate\",\n    TRUE         ~ \"Low confidence\"\n  ))\n\nNow compare the average population of counties in each reliability category.\n\ncounty_wide %&gt;%\n  group_by(reliability) %&gt;%\n  summarize(\n    n_counties = n(),\n    avg_population = mean(popE)\n  )\n\n# A tibble: 3 × 3\n  reliability     n_counties avg_population\n  &lt;chr&gt;                &lt;int&gt;          &lt;dbl&gt;\n1 High confidence         12        458292.\n2 Low confidence           5         28596.\n3 Moderate                 7         75465.\n\n\nHigh-confidence counties average about 458,000 people. That’s roughly 16 times more than low-confidence counties (about 29,000), with moderate counties in between at about 75,000. This matches what I expected: the ACS samples fewer households in smaller counties, so their estimates carry more uncertainty. Simply put, the most populated counties have the smallest margin of error and thus the highest confidence, and vice-versa"
+  },
+  {
+    "objectID": "assignments/assignment2.html#what-this-means-for-policy",
+    "href": "assignments/assignment2.html#what-this-means-for-policy",
+    "title": "Assignment 2: Who Do We Know the Least About?",
+    "section": "What this means for policy",
+    "text": "What this means for policy\nThe Maryland counties we know least about, statistically speaking, are Kent, Somerset, Garrett, and Dorchester. Each shows the highest moe_pct in the dataset, meaning their median home value estimates carry the largest margin of error relative to the estimate itself. This isn’t a coincidence: these are also the state’s least populated counties, and since the ACS is a sample survey, smaller counties yield smaller samples, which produces less statistically reliable estimates. Large, densely populated counties like Montgomery, Prince George’s, and Baltimore City, by contrast, are surveyed far more heavily and show much smaller margins of error.\nIf a state agency used median home value to allocate funding, for example, directing more support toward counties with lower home values and treated every county’s number as equally certain; the small, low-reliability counties would bear all the risk. If a county like Somerset’s true home value is actually higher than its shaky estimate suggests, it risks receiving too little funding relative to its real need. If the true value is actually lower, it risks receiving more than it needs, pulling funding away from counties that could use it more. Meanwhile, large counties like Montgomery are essentially unaffected by this risk, since their estimates are already precise. In short, the places we measure least reliably are exactly the places most likely to be misjudged when that data drives real decisions."
   }
 ]

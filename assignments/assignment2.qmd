@@ -1,0 +1,164 @@
+---
+title: "Assignment 2: Who Do We Know the Least About?"
+subtitle: "Measuring uncertainty in American Community Survey data"
+author: "Gautami Kasat"
+date: today
+format:
+  html:
+    toc: true
+    code-fold: false
+execute:
+  warning: false
+  message: false
+---
+
+## Setup
+
+```{r}
+library(tidyverse)
+library(tidycensus)
+```
+
+---
+
+## The question
+
+Every number the American Community Survey publishes is an estimate drawn from a
+sample, not a count. That means every number comes with a margin of error — a
+statement about how wrong it might be.
+
+Most people ignore it. In this assignment, you won't.
+
+**In this analysis, I look at median home value across counties in Maryland, and ask which communities we measure most and least reliably. As someone house-hunting in the Baltimore, I wanted to know how reliable home value estimates really are before treating them as fact. This matters beyond my own search as well since, shaky estimates affect property tax assessments and lending decisions too, so it's useful for anyone relying on this data, not just buyers.**
+
+---
+
+## Choosing what to measure
+
+```{r}
+my_state <- "MD"        # two-letter abbreviation, in quotes
+my_variable <- "B25077_001"     # the variable code, in quotes
+```
+
+## Pulling the data
+
+```{r}
+county_data <- get_acs(
+  geography = "county",
+  variables = my_variable,
+  state = my_state,
+  year = 2023,
+  survey = "acs5"
+)
+```
+
+Let's look at what came back.
+
+```{r}
+dim(county_data)
+head(county_data)
+```
+
+
+**I got 24 rows and it matches with the number of counties in the state. Since Maryland officially consists of 23 counties and 1 independent city (Baltimore City), which the Census Bureau treats as a "county equivalent"**
+
+---
+
+## How big is the margin of error?
+
+A margin of error of 3,000 means something very different for an estimate of 20,000
+than for an estimate of 200,000. To compare across places, we need it as a
+percentage.
+
+```{r}
+county_data <- county_data %>%
+  mutate(moe_pct = moe / estimate * 100)
+```
+
+
+Now sort to see which counties are measured least reliably.
+
+```{r}
+county_data %>%
+  arrange(desc(moe_pct)) %>%
+  select(NAME, estimate, moe, moe_pct) %>%
+  head(10)
+```
+
+
+**The county with the highest moe is Somerset County, Maryland. Its moe_pct is 9.098600%**
+
+---
+
+## Sorting counties into reliability categories
+
+```{r}
+county_data <- county_data %>%
+  mutate(reliability = case_when(
+    moe_pct < 2  ~ "High confidence",
+    moe_pct < 4 ~ "Moderate",
+    TRUE         ~ "Low confidence"
+  ))
+
+count(county_data, reliability)
+```
+
+
+**High confidence reliability has 12 counties, Moderate has 7 counties and Low confidence has 5 counties**
+
+---
+
+## Is the margin of error bigger in small places?
+
+To answer this we need population and our variable side by side, in the same row.
+That means a **wide** pull.
+
+```{r}
+county_wide <- get_acs(
+  geography = "county",
+  variables = c(myvar = my_variable,
+                pop   = "B01003_001"),
+  state = my_state,
+  year = 2023,
+  survey = "acs5",
+  output = "wide"
+)
+
+head(county_wide)
+```
+
+
+```{r}
+county_wide <- county_wide %>%
+  mutate(moe_pct = myvarM / myvarE * 100) %>%
+  mutate(reliability = case_when(
+    moe_pct < 2  ~ "High confidence",
+    moe_pct < 4 ~ "Moderate",
+    TRUE         ~ "Low confidence"
+  ))
+```
+
+Now compare the average population of counties in each reliability category.
+
+```{r}
+county_wide %>%
+  group_by(reliability) %>%
+  summarize(
+    n_counties = n(),
+    avg_population = mean(popE)
+  )
+```
+
+**High-confidence counties average about 458,000 people. That's roughly 16 times more than low-confidence counties (about 29,000), with moderate counties in between at about 75,000. This matches what I expected: the ACS samples fewer households in smaller counties, so their estimates carry more uncertainty. Simply put, the most populated counties have the smallest margin of error and thus the highest confidence, and vice-versa**
+
+---
+
+## What this means for policy
+
+**The Maryland counties we know least about, statistically speaking, are Kent, Somerset, Garrett, and Dorchester. Each shows the highest moe_pct in the dataset, meaning their median home value estimates carry the largest margin of error relative to the estimate itself. This isn't a coincidence: these are also the state's least populated counties, and since the ACS is a sample survey, smaller counties yield smaller samples, which produces less statistically reliable estimates. Large, densely populated counties like Montgomery, Prince George's, and Baltimore City, by contrast, are surveyed far more heavily and show much smaller margins of error.**
+
+**If a state agency used median home value to allocate funding, for example, directing more support toward counties with lower home values and treated every county's number as equally certain; the small, low-reliability counties would bear all the risk. If a county like Somerset's true home value is actually higher than its shaky estimate suggests, it risks receiving too little funding relative to its real need. If the true value is actually lower, it risks receiving more than it needs, pulling funding away from counties that could use it more. Meanwhile, large counties like Montgomery are essentially unaffected by this risk, since their estimates are already precise. In short, the places we measure least reliably are exactly the places most likely to be misjudged when that data drives real decisions.**
+
+---
+
+
