@@ -8,9 +8,7 @@ date: 2026-08-28
 
 <!-- CHANGE THIS: replace with your own notes -->
 
-Set up the portfolio workflow: made a repository from a template, cloned it with
-GitHub Desktop, edited files in RStudio, rendered with Quarto, and published to
-GitHub Pages.
+We set up our new portfolio! Its live. Understand some theories abour Quarto, Git, Github, R studio and what a typical workflow looks like. Getting used to the interface and understand Save, render, commit, Push :P 
 
 ## Key Concepts
 
@@ -35,11 +33,12 @@ sessionInfo()$R.version$version.string
 
 <!-- CHANGE THIS: 3-4 sentences -->
 
-What I want out of this course:
+What I want out of this course: How and where do we apply these tools. Its uses and possibilities. Also with AI how much of it is actually relevant. We can easily build a website from scratch and edit it. 
 
-One thing I'm nervous about:
+One thing I'm nervous about: I am new to programming and understanding syntax. 
 
 ## Questions I Still Have
 
--
--
+- With AI how can we actually leverage the skill
+- I am truly trying to understand what would be its applications and its possibilities?
+
