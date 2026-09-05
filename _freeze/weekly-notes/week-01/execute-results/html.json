@@ -1,0 +1,15 @@
+{
+  "hash": "39ceb423c42588be54d0f44d5e5c5aa4",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Week 1: Getting Set Up\"\ndescription: \"First impressions, and getting the workflow running.\"\ndate: 2026-08-28\n---\n\n\n\n\n## What We Did\n\n<!-- CHANGE THIS: replace with your own notes -->\n\nSet up the portfolio workflow: made a repository from a template, cloned it with\nGitHub Desktop, edited files in RStudio, rendered with Quarto, and published to\nGitHub Pages.\n\n## Key Concepts\n\nThree places a file can live:\n\n1. **My computer** — where I edit\n2. **GitHub.com** — where it's stored\n3. **My live site** — what the world sees\n\nThe loop: **Edit → Save → Render → Commit → Push → wait → refresh**\n\n## Proving R Works\n\nThe chunk below runs when this page renders. If you can see a result underneath\nit on your published site, R and Quarto are talking to each other correctly.\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nsessionInfo()$R.version$version.string\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] \"R version 4.6.0 (2026-04-24)\"\n```\n\n\n:::\n:::\n\n\n\n\n## Reflection\n\n<!-- CHANGE THIS: 3-4 sentences -->\n\nWhat I want out of this course:\n\nOne thing I'm nervous about:\n\n## Questions I Still Have\n\n-\n-\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,121 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "Welcome to my portfolio for MUSA 5080: Public Policy Analytics at the University of Pennsylvania.\nThis site documents my work in the Master of Urban Spatial Analytics program — weekly notes, course assignments, and a final project applying data analysis to urban policy questions.\n\n\n\nI’m a student in the MUSA program at Penn. My background is in [YOUR BACKGROUND], and I’m interested in [YOUR INTERESTS].\n\n\n\n\nWeekly Notes — what I’m learning each week\nAssignments — analyses completed for the course\nAbout — more background and how to reach me\n\n\n\n\n\n\nEmail: your-email@upenn.edu\nGitHub: @your-username"
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Home",
+    "section": "",
+    "text": "I’m a student in the MUSA program at Penn. My background is in [YOUR BACKGROUND], and I’m interested in [YOUR INTERESTS]."
+  },
+  {
+    "objectID": "index.html#what-youll-find-here",
+    "href": "index.html#what-youll-find-here",
+    "title": "Home",
+    "section": "",
+    "text": "Weekly Notes — what I’m learning each week\nAssignments — analyses completed for the course\nAbout — more background and how to reach me"
+  },
+  {
+    "objectID": "index.html#get-in-touch",
+    "href": "index.html#get-in-touch",
+    "title": "Home",
+    "section": "",
+    "text": "Email: your-email@upenn.edu\nGitHub: @your-username"
+  },
+  {
+    "objectID": "weekly-notes/week-01.html",
+    "href": "weekly-notes/week-01.html",
+    "title": "Week 1: Getting Set Up",
+    "section": "",
+    "text": "Set up the portfolio workflow: made a repository from a template, cloned it with GitHub Desktop, edited files in RStudio, rendered with Quarto, and published to GitHub Pages."
+  },
+  {
+    "objectID": "weekly-notes/week-01.html#what-we-did",
+    "href": "weekly-notes/week-01.html#what-we-did",
+    "title": "Week 1: Getting Set Up",
+    "section": "",
+    "text": "Set up the portfolio workflow: made a repository from a template, cloned it with GitHub Desktop, edited files in RStudio, rendered with Quarto, and published to GitHub Pages."
+  },
+  {
+    "objectID": "weekly-notes/week-01.html#key-concepts",
+    "href": "weekly-notes/week-01.html#key-concepts",
+    "title": "Week 1: Getting Set Up",
+    "section": "Key Concepts",
+    "text": "Key Concepts\nThree places a file can live:\n\nMy computer — where I edit\nGitHub.com — where it’s stored\nMy live site — what the world sees\n\nThe loop: Edit → Save → Render → Commit → Push → wait → refresh"
+  },
+  {
+    "objectID": "weekly-notes/week-01.html#proving-r-works",
+    "href": "weekly-notes/week-01.html#proving-r-works",
+    "title": "Week 1: Getting Set Up",
+    "section": "Proving R Works",
+    "text": "Proving R Works\nThe chunk below runs when this page renders. If you can see a result underneath it on your published site, R and Quarto are talking to each other correctly.\n\nsessionInfo()$R.version$version.string\n\n[1] \"R version 4.6.0 (2026-04-24)\""
+  },
+  {
+    "objectID": "weekly-notes/week-01.html#reflection",
+    "href": "weekly-notes/week-01.html#reflection",
+    "title": "Week 1: Getting Set Up",
+    "section": "Reflection",
+    "text": "Reflection\n\nWhat I want out of this course:\nOne thing I’m nervous about:"
+  },
+  {
+    "objectID": "weekly-notes/week-01.html#questions-i-still-have",
+    "href": "weekly-notes/week-01.html#questions-i-still-have",
+    "title": "Week 1: Getting Set Up",
+    "section": "Questions I Still Have",
+    "text": "Questions I Still Have"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Write a few paragraphs about yourself here: where you came from before MUSA, what drew you to urban spatial analytics, and what you’re hoping to do with it."
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About",
+    "section": "",
+    "text": "Write a few paragraphs about yourself here: where you came from before MUSA, what drew you to urban spatial analytics, and what you’re hoping to do with it."
+  },
+  {
+    "objectID": "about.html#skills",
+    "href": "about.html#skills",
+    "title": "About",
+    "section": "Skills",
+    "text": "Skills\n\n\nLanguages & Tools: R, Quarto, Git\nSpatial: (add as you learn)\nData: US Census / ACS via tidycensus"
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About",
+    "section": "Contact",
+    "text": "Contact\n\n\nEmail: your-email@upenn.edu\nGitHub: @your-username"
+  },
+  {
+    "objectID": "assignments/index.html",
+    "href": "assignments/index.html",
+    "title": "Assignments",
+    "section": "",
+    "text": "Completed assignments for MUSA 5080. New assignments appear here automatically once you add the .qmd file to this folder and render.\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "weekly-notes/index.html",
+    "href": "weekly-notes/index.html",
+    "title": "Weekly Notes",
+    "section": "",
+    "text": "Notes from each week of MUSA 5080. New entries appear here automatically — add a .qmd file to this folder and render.\n\n\n\n\n\n\n\n\n\n\n\nWeek 1: Getting Set Up\n\n\n\n\n\nFirst impressions, and getting the workflow running.\n\n\n\n\n\nAug 28, 2026\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "data/readme.html",
+    "href": "data/readme.html",
+    "title": "",
+    "section": "",
+    "text": "Code\n\n\n\n\nData files for MUSA 5080\nDownload assignment data from Canvas and save it here. Do not rename the files! Have a nice day :)"
+  }
+]

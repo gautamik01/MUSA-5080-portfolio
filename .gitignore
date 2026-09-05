@@ -1,0 +1,26 @@
+# --- Secrets: never commit these -------------------------------------
+.Renviron
+.env
+*.pem
+
+# --- R session junk --------------------------------------------------
+.Rhistory
+.RData
+.Rproj.user/
+.Ruserdata
+
+# --- OS junk ---------------------------------------------------------
+.DS_Store
+Thumbs.db
+
+# ---------------------------------------------------------------------
+# DO NOT add docs/ to this file.
+# GitHub Pages serves docs/ — ignoring it means your site never updates.
+#
+# DO NOT add _freeze/ to this file.
+# freeze: auto caches your rendered code results there. Ignoring it means
+# your published site shows stale output that won't match your local copy.
+# ---------------------------------------------------------------------
+.positai
+
+/.quarto/

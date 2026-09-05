@@ -1,0 +1,14 @@
+---
+title: "Assignments"
+description: "Graded work for MUSA 5080."
+listing:
+  contents: "*.qmd"
+  sort: "date desc"
+  type: default
+  fields: [title, date, description]
+  sort-ui: false
+  filter-ui: false
+---
+
+Completed assignments for MUSA 5080. New assignments appear here automatically
+once you add the `.qmd` file to this folder and render.

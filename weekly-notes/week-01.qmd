@@ -1,0 +1,45 @@
+---
+title: "Week 1: Getting Set Up"
+description: "First impressions, and getting the workflow running."
+date: 2026-08-28
+---
+
+## What We Did
+
+<!-- CHANGE THIS: replace with your own notes -->
+
+Set up the portfolio workflow: made a repository from a template, cloned it with
+GitHub Desktop, edited files in RStudio, rendered with Quarto, and published to
+GitHub Pages.
+
+## Key Concepts
+
+Three places a file can live:
+
+1. **My computer** — where I edit
+2. **GitHub.com** — where it's stored
+3. **My live site** — what the world sees
+
+The loop: **Edit → Save → Render → Commit → Push → wait → refresh**
+
+## Proving R Works
+
+The chunk below runs when this page renders. If you can see a result underneath
+it on your published site, R and Quarto are talking to each other correctly.
+
+```{r}
+sessionInfo()$R.version$version.string
+```
+
+## Reflection
+
+<!-- CHANGE THIS: 3-4 sentences -->
+
+What I want out of this course:
+
+One thing I'm nervous about:
+
+## Questions I Still Have
+
+-
+-

@@ -1,0 +1,34 @@
+---
+title: "Home"
+---
+
+# YOUR NAME HERE {#welcome}
+
+<!-- CHANGE THIS: replace with your own name above -->
+
+Welcome to my portfolio for **MUSA 5080: Public Policy Analytics** at the
+University of Pennsylvania.
+
+This site documents my work in the Master of Urban Spatial Analytics program —
+weekly notes, course assignments, and a final project applying data analysis to
+urban policy questions.
+
+## About Me
+
+<!-- CHANGE THIS: two or three sentences about yourself -->
+
+I'm a student in the MUSA program at Penn. My background is in
+[YOUR BACKGROUND], and I'm interested in [YOUR INTERESTS].
+
+## What You'll Find Here
+
+- **[Weekly Notes](weekly-notes/index.qmd)** — what I'm learning each week
+- **[Assignments](assignments/index.qmd)** — analyses completed for the course
+- **[About](about.qmd)** — more background and how to reach me
+
+## Get in Touch
+
+<!-- CHANGE THIS -->
+
+- Email: your-email@upenn.edu
+- GitHub: [@your-username](https://github.com/your-username)

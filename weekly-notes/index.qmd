@@ -1,0 +1,14 @@
+---
+title: "Weekly Notes"
+description: "Running notes from MUSA 5080."
+listing:
+  contents: "*.qmd"
+  sort: "date desc"
+  type: default
+  fields: [title, date, description]
+  sort-ui: false
+  filter-ui: false
+---
+
+Notes from each week of MUSA 5080. New entries appear here automatically —
+add a `.qmd` file to this folder and render.
