@@ -2,7 +2,7 @@
 title: "Home"
 ---
 
-# YOUR NAME HERE {#welcome}
+# Gautami {#welcome}
 
 <!-- CHANGE THIS: replace with your own name above -->
 
@@ -17,8 +17,7 @@ urban policy questions.
 
 <!-- CHANGE THIS: two or three sentences about yourself -->
 
-I'm a student in the MUSA program at Penn. My background is in
-[YOUR BACKGROUND], and I'm interested in [YOUR INTERESTS].
+I am a part designer, part climate detective, always chasing the question of how water, land, and cities can get along better. Trained as an architect, now deep in the world of landscape urbanism. Currently sharpening my data chops, because the future of design, she'd say, needs both a good eye and good numbers.Off the clock, she's training for her next marathon, hunting down the best food in whatever city she's in, and never says no to a good beer(❁´◡`❁)
 
 ## What You'll Find Here
 

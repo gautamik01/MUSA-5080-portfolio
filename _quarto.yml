@@ -4,7 +4,7 @@ project:
   execute-dir: project
 
 website:
-  title: "YOUR NAME HERE - MUSA 5080 Portfolio"        # <-- CHANGE THIS
+  title: "Gautami - MUSA 5080 Portfolio"        # <-- CHANGE THIS
   description: "Public Policy Analytics portfolio"
   navbar:
     title: "Portfolio"
@@ -19,11 +19,11 @@ website:
         text: "Assignments"
     right:
       - icon: github
-        href: https://github.com/YOUR-USERNAME-HERE/MUSA-5080-portfolio      # <-- CHANGE THIS
+        href: https://github.com/gautamik01/MUSA-5080-portfolio      # <-- CHANGE THIS
 
 format:
   html:
-    theme: cosmo
+    theme: sketchy
     toc: true
     code-fold: false
     code-tools: true
