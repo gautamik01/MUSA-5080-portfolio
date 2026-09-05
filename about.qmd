@@ -6,14 +6,17 @@ title: "About Me"
 
 <!-- CHANGE THIS -->
 
-Write a few paragraphs about yourself here: where you came from before MUSA,
-what drew you to urban spatial analytics, and what you're hoping to do with it.
+Master student of Urban Spatial Analytics (MUSA) at the Weitzman School of Design, University of Pennsylvania, taking my practice deeper into the data behind the design.
+
+Trained as both an architect and urbanist, I transform climate science into adaptive urban strategies that treat environmental change not as a threat, but as a catalyst for resilience. I design with water flow, seasonal flooding, and ecological shift, not against them.
+
+My work spans projected climate scenarios, participatory planning, and interventions like floodable landscapes and climate-adaptive urban foodscapes. Always at the intersection of environmental data, policy, and design, and always in pursuit of strategies that are equitable, not just forward-thinking.
 
 ## Skills
 
 <!-- CHANGE THIS: update this through the semester as it becomes true -->
 
-- **Languages & Tools:** R, Quarto, Git
+- **Languages & Tools:** R, Quarto, Git, Phython
 - **Spatial:** (add as you learn)
 - **Data:** US Census / ACS via `tidycensus`
 
@@ -21,5 +24,5 @@ what drew you to urban spatial analytics, and what you're hoping to do with it.
 
 <!-- CHANGE THIS -->
 
-- Email: your-email@upenn.edu
-- GitHub: [@your-username](https://github.com/your-username)
+- Email: gautamik@upenn.edu
+- GitHub: [@gautamik01](https://github.com/gautamik01)

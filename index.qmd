@@ -17,7 +17,7 @@ urban policy questions.
 
 <!-- CHANGE THIS: two or three sentences about yourself -->
 
-I am a part designer, part climate detective, always chasing the question of how water, land, and cities can get along better. Trained as an architect, now deep in the world of landscape urbanism. Currently sharpening my data chops, because the future of design, she'd say, needs both a good eye and good numbers.Off the clock, she's training for her next marathon, hunting down the best food in whatever city she's in, and never says no to a good beer(❁´◡`❁)
+I am a part designer, part climate detective, always chasing the question of how water, land, and cities can get along better. Trained as an architect, now deep in the world of landscape urbanism. Currently sharpening my data chops, because the future of design, she'd say, needs both a good eye and good numbers.Off the clock, she's training for her next marathon, hunting down the best food in whatever city she's in, and never says no to a good beer (❁´◡`❁)
 
 ## What You'll Find Here
 
@@ -29,5 +29,5 @@ I am a part designer, part climate detective, always chasing the question of how
 
 <!-- CHANGE THIS -->
 
-- Email: your-email@upenn.edu
-- GitHub: [@your-username](https://github.com/your-username)
+- Email: gautamik@upenn.edu
+- GitHub: [@gautamik01](https://github.com/gautamik01)

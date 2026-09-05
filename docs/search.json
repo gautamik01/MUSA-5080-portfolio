@@ -4,14 +4,14 @@
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "Welcome to my portfolio for MUSA 5080: Public Policy Analytics at the University of Pennsylvania.\nThis site documents my work in the Master of Urban Spatial Analytics program — weekly notes, course assignments, and a final project applying data analysis to urban policy questions.\n\n\n\nI am a part designer, part climate detective, always chasing the question of how water, land, and cities can get along better. Trained as an architect, now deep in the world of landscape urbanism. Currently sharpening my data chops, because the future of design, she’d say, needs both a good eye and good numbers.Off the clock, she’s training for her next marathon, hunting down the best food in whatever city she’s in, and never says no to a good beer(❁´◡`❁)\n\n\n\n\nWeekly Notes — what I’m learning each week\nAssignments — analyses completed for the course\nAbout — more background and how to reach me\n\n\n\n\n\n\nEmail: your-email@upenn.edu\nGitHub: @your-username"
+    "text": "Welcome to my portfolio for MUSA 5080: Public Policy Analytics at the University of Pennsylvania.\nThis site documents my work in the Master of Urban Spatial Analytics program — weekly notes, course assignments, and a final project applying data analysis to urban policy questions.\n\n\n\nI am a part designer, part climate detective, always chasing the question of how water, land, and cities can get along better. Trained as an architect, now deep in the world of landscape urbanism. Currently sharpening my data chops, because the future of design, she’d say, needs both a good eye and good numbers.Off the clock, she’s training for her next marathon, hunting down the best food in whatever city she’s in, and never says no to a good beer (❁´◡`❁)\n\n\n\n\nWeekly Notes — what I’m learning each week\nAssignments — analyses completed for the course\nAbout — more background and how to reach me\n\n\n\n\n\n\nEmail: gautamik@upenn.edu\nGitHub: @gautamik01"
   },
   {
     "objectID": "index.html#about-me",
     "href": "index.html#about-me",
     "title": "Home",
     "section": "",
-    "text": "I am a part designer, part climate detective, always chasing the question of how water, land, and cities can get along better. Trained as an architect, now deep in the world of landscape urbanism. Currently sharpening my data chops, because the future of design, she’d say, needs both a good eye and good numbers.Off the clock, she’s training for her next marathon, hunting down the best food in whatever city she’s in, and never says no to a good beer(❁´◡`❁)"
+    "text": "I am a part designer, part climate detective, always chasing the question of how water, land, and cities can get along better. Trained as an architect, now deep in the world of landscape urbanism. Currently sharpening my data chops, because the future of design, she’d say, needs both a good eye and good numbers.Off the clock, she’s training for her next marathon, hunting down the best food in whatever city she’s in, and never says no to a good beer (❁´◡`❁)"
   },
   {
     "objectID": "index.html#what-youll-find-here",
@@ -25,7 +25,7 @@
     "href": "index.html#get-in-touch",
     "title": "Home",
     "section": "",
-    "text": "Email: your-email@upenn.edu\nGitHub: @your-username"
+    "text": "Email: gautamik@upenn.edu\nGitHub: @gautamik01"
   },
   {
     "objectID": "weekly-notes/week-01.html",
@@ -67,49 +67,49 @@
     "href": "weekly-notes/week-01.html#questions-i-still-have",
     "title": "Week 1: Getting Set Up",
     "section": "Questions I Still Have",
-    "text": "Questions I Still Have\n\nWith AI how can we actually leverage the skill\nI am truly trying to understand what would be its applications and its possibilities?"
+    "text": "Questions I Still Have\n\nWith AI how can we actually leverage the skill and not just surender?\nI am truly trying to understand what would be its applications and its possibilities?"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About Me",
     "section": "",
-    "text": "Write a few paragraphs about yourself here: where you came from before MUSA, what drew you to urban spatial analytics, and what you’re hoping to do with it."
+    "text": "Master student of Urban Spatial Analytics (MUSA) at the Weitzman School of Design, University of Pennsylvania, taking my practice deeper into the data behind the design.\nTrained as both an architect and urbanist, I transform climate science into adaptive urban strategies that treat environmental change not as a threat, but as a catalyst for resilience. I design with water flow, seasonal flooding, and ecological shift, not against them.\nMy work spans projected climate scenarios, participatory planning, and interventions like floodable landscapes and climate-adaptive urban foodscapes. Always at the intersection of environmental data, policy, and design, and always in pursuit of strategies that are equitable, not just forward-thinking."
   },
   {
     "objectID": "about.html#background",
     "href": "about.html#background",
-    "title": "About",
+    "title": "About Me",
     "section": "",
-    "text": "Write a few paragraphs about yourself here: where you came from before MUSA, what drew you to urban spatial analytics, and what you’re hoping to do with it."
+    "text": "Master student of Urban Spatial Analytics (MUSA) at the Weitzman School of Design, University of Pennsylvania, taking my practice deeper into the data behind the design.\nTrained as both an architect and urbanist, I transform climate science into adaptive urban strategies that treat environmental change not as a threat, but as a catalyst for resilience. I design with water flow, seasonal flooding, and ecological shift, not against them.\nMy work spans projected climate scenarios, participatory planning, and interventions like floodable landscapes and climate-adaptive urban foodscapes. Always at the intersection of environmental data, policy, and design, and always in pursuit of strategies that are equitable, not just forward-thinking."
   },
   {
     "objectID": "about.html#skills",
     "href": "about.html#skills",
-    "title": "About",
+    "title": "About Me",
     "section": "Skills",
-    "text": "Skills\n\n\nLanguages & Tools: R, Quarto, Git\nSpatial: (add as you learn)\nData: US Census / ACS via tidycensus"
+    "text": "Skills\n\n\nLanguages & Tools: R, Quarto, Git, Phython\nSpatial: (add as you learn)\nData: US Census / ACS via tidycensus"
   },
   {
     "objectID": "about.html#contact",
     "href": "about.html#contact",
-    "title": "About",
+    "title": "About Me",
     "section": "Contact",
-    "text": "Contact\n\n\nEmail: your-email@upenn.edu\nGitHub: @your-username"
+    "text": "Contact\n\n\nEmail: gautamik@upenn.edu\nGitHub: @gautamik01"
   },
   {
     "objectID": "assignments/index.html",
     "href": "assignments/index.html",
     "title": "Assignments",
     "section": "",
-    "text": "Completed assignments for MUSA 5080. New assignments appear here automatically once you add the .qmd file to this folder and render.\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Completed assignments for MUSA 5080. New assignments appear here automatically once you add the .qmd file to this folder and render.\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "weekly-notes/index.html",
     "href": "weekly-notes/index.html",
     "title": "Weekly Notes",
     "section": "",
-    "text": "Notes from each week of MUSA 5080. New entries appear here automatically — add a .qmd file to this folder and render.\n\n\n\n\n\n\n\n\n\n\n\nWeek 1: Getting Set Up\n\n\nFirst impressions, and getting the workflow running.\n\n\n\n\n\nAug 28, 2026\n\n\n\n\n\nNo matching items"
+    "text": "Notes from each week of MUSA 5080. New entries appear here automatically — add a .qmd file to this folder and render.\n\n\n\n\n\n\n\n\n\n\n\nWeek 2: Census Data\n\n\ntable functions and acs data\n\n\n\n\n\nSep 4, 2026\n\n\n\n\n\n\n\nWeek 1: Getting Set Up\n\n\nFirst impressions, and getting the workflow running.\n\n\n\n\n\nAug 28, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "data/readme.html",
@@ -117,5 +117,47 @@
     "title": "",
     "section": "",
     "text": "Code\n\n\n\n\nData files for MUSA 5080\nDownload assignment data from Canvas and save it here. Do not rename the files! Have a nice day :)"
+  },
+  {
+    "objectID": "weekly-notes/week-02.html",
+    "href": "weekly-notes/week-02.html",
+    "title": "Week 2: Census Data",
+    "section": "",
+    "text": "We learnt many codes, understood packages, PIPE (% &gt; %) a function and it works. We also had a short class on Decennial Census and American Community Survey."
+  },
+  {
+    "objectID": "weekly-notes/week-02.html#what-we-did",
+    "href": "weekly-notes/week-02.html#what-we-did",
+    "title": "Week 2: Census Data",
+    "section": "",
+    "text": "We learnt many codes, understood packages, PIPE (% &gt; %) a function and it works. We also had a short class on Decennial Census and American Community Survey."
+  },
+  {
+    "objectID": "weekly-notes/week-02.html#key-concepts",
+    "href": "weekly-notes/week-02.html#key-concepts",
+    "title": "Week 2: Census Data",
+    "section": "Key Concepts",
+    "text": "Key Concepts\nSome useful functions to know:\n\nPIPE — and then do this\ntibble — modernized version of R data frame that simplifies data analysis by printing cleanly and preventing silent code errors.\nDecennial Census — every 10 years\nACS Census - every 5 years (Most used)\n\nThe loop: Edit → Save → Render → Commit → Push → wait → refresh"
+  },
+  {
+    "objectID": "weekly-notes/week-02.html#proving-r-works",
+    "href": "weekly-notes/week-02.html#proving-r-works",
+    "title": "Week 2: Census Data",
+    "section": "Proving R Works",
+    "text": "Proving R Works\nThe chunk below runs when this page renders. If you can see a result underneath it on your published site, R and Quarto are talking to each other correctly.\n\nsessionInfo()$R.version$version.string\n\n[1] \"R version 4.6.1 (2026-06-24 ucrt)\""
+  },
+  {
+    "objectID": "weekly-notes/week-02.html#reflection",
+    "href": "weekly-notes/week-02.html#reflection",
+    "title": "Week 2: Census Data",
+    "section": "Reflection",
+    "text": "Reflection\n\nIts getting clearer and I am less scared of working with R.\nTyping codes by hand is helpful to uderstand whats happening."
+  },
+  {
+    "objectID": "weekly-notes/week-02.html#questions-i-still-have",
+    "href": "weekly-notes/week-02.html#questions-i-still-have",
+    "title": "Week 2: Census Data",
+    "section": "Questions I Still Have",
+    "text": "Questions I Still Have\n\nDifference between different formates wide, character, string, float, etc.. ? Where to use what ?"
   }
 ]
