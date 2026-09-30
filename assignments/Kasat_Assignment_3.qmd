@@ -1,0 +1,20 @@
+---
+title: "Verify the Claim: Philadelphia Poverty Change"
+subtitle: "Testing if ACS data supports the 2018 news story"
+author: Gautami Kasat
+date: today
+format:
+  html:
+    toc: true
+    code-fold: true
+    code-summary: "View Code"
+    embed-resources: true
+execute:
+  warning: false
+  message: false
+---
+
+## The Enquiry
+
+This report tests whether the ACS data supports the claims in Alfred Lubrano's 2018 article, ["New Census figures on Philly neighborhoods show inequality, high numbers of whites living in poverty"](https://whyy.org/articles/new-census-figures-on-philly-neighborhoods-show-inequality-high-numbers-of-whites-living-in-poverty/) (WHYY / Philadelphia Inquirer, December 6, 2018). 
+

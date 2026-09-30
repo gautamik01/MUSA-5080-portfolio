@@ -102,7 +102,7 @@
     "href": "assignments/index.html",
     "title": "Assignments",
     "section": "",
-    "text": "Completed assignments for MUSA 5080. New assignments appear here automatically once you add the .qmd file to this folder and render.\n\n\n\n\n\n\n\n\n\n\n\nAssignment 2: Who Do We Know the Least About?\n\n\n\n\n\n\n\n\nSep 5, 2026\n\n\n\n\n\nNo matching items"
+    "text": "Completed assignments for MUSA 5080. New assignments appear here automatically once you add the .qmd file to this folder and render.\n\n\n\n\n\n\n\n\n\n\n\nVerify the Claim: Philadelphia Poverty Change\n\n\n\n\n\n\n\n\nSep 30, 2026\n\n\n\n\n\n\n\nAssignment 2: Who Do We Know the Least About?\n\n\n\n\n\n\n\n\nSep 30, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "weekly-notes/index.html",
@@ -222,5 +222,19 @@
     "title": "Assignment 2: Who Do We Know the Least About?",
     "section": "What this means for policy",
     "text": "What this means for policy\nThe Maryland counties we know least about, statistically speaking, are Kent, Somerset, Garrett, and Dorchester. Each shows the highest moe_pct in the dataset, meaning their median home value estimates carry the largest margin of error relative to the estimate itself. This isn’t a coincidence: these are also the state’s least populated counties, and since the ACS is a sample survey, smaller counties yield smaller samples, which produces less statistically reliable estimates. Large, densely populated counties like Montgomery, Prince George’s, and Baltimore City, by contrast, are surveyed far more heavily and show much smaller margins of error.\nIf a state agency used median home value to allocate funding, for example, directing more support toward counties with lower home values and treated every county’s number as equally certain; the small, low-reliability counties would bear all the risk. If a county like Somerset’s true home value is actually higher than its shaky estimate suggests, it risks receiving too little funding relative to its real need. If the true value is actually lower, it risks receiving more than it needs, pulling funding away from counties that could use it more. Meanwhile, large counties like Montgomery are essentially unaffected by this risk, since their estimates are already precise. In short, the places we measure least reliably are exactly the places most likely to be misjudged when that data drives real decisions."
+  },
+  {
+    "objectID": "assignments/Kasat_Assignment_3.html",
+    "href": "assignments/Kasat_Assignment_3.html",
+    "title": "Verify the Claim: Philadelphia Poverty Change",
+    "section": "",
+    "text": "This report tests whether the ACS data supports the claims in Alfred Lubrano’s 2018 article, “New Census figures on Philly neighborhoods show inequality, high numbers of whites living in poverty” (WHYY / Philadelphia Inquirer, December 6, 2018)."
+  },
+  {
+    "objectID": "assignments/Kasat_Assignment_3.html#the-enquiry",
+    "href": "assignments/Kasat_Assignment_3.html#the-enquiry",
+    "title": "Verify the Claim: Philadelphia Poverty Change",
+    "section": "",
+    "text": "This report tests whether the ACS data supports the claims in Alfred Lubrano’s 2018 article, “New Census figures on Philly neighborhoods show inequality, high numbers of whites living in poverty” (WHYY / Philadelphia Inquirer, December 6, 2018)."
   }
 ]
