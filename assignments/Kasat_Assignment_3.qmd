@@ -1,5 +1,5 @@
 ---
-title: "Verify the Claim: Philadelphia Poverty Change"
+title: "Assignment3_Verify the Claim: Philadelphia Poverty Change"
 subtitle: "Testing if ACS data supports the 2018 news story"
 author: Gautami Kasat
 date: today
@@ -18,3 +18,48 @@ execute:
 
 This report tests whether the ACS data supports the claims in Alfred Lubrano's 2018 article, ["New Census figures on Philly neighborhoods show inequality, high numbers of whites living in poverty"](https://whyy.org/articles/new-census-figures-on-philly-neighborhoods-show-inequality-high-numbers-of-whites-living-in-poverty/) (WHYY / Philadelphia Inquirer, December 6, 2018). 
 
+## Setup
+
+```{r}
+#| include: false
+library(tidyverse)
+library(tidycensus)
+library(sf)
+```
+
+## Part 1: Reconstruct
+
+### Variables 
+I pulled four ACS variables. For overall poverty, B17001_002 counts people below the poverty level in the past twelve months, and B17001_001 gives the population for whom poverty status is determined. Because several claims are specifically about white poverty, I also pulled B17001A_001 and B17001A_002, the same table restricted to people identifying as white alone. ACS publishes counts, not rates, so both the rate and its margin of error have to be calculated. I used the 2006-2010 and 2013-2017 five-year estimates at the census tract level. Five-year estimates are the only ones that reach tracts; one-year estimates cover only areas of 65,000 people or more.
+
+### Assumptions 
+The article does not document its method, so several choices are mine. It does not name the ACS table it used; I assumed B17001. It says "white" without defining it, so I used B17001A, white alone, which includes people who also identify as Hispanic. And it reports neighborhood figures, which are not Census geographies: its reporters aggregated tracts into boundaries of their own choosing and never published which tracts went where, so my numbers will not match theirs. Every figure in the article is a point estimate, with no margins of error given. 
+
+### Overlap
+The two periods do not overlap. Census Bureau guidance is explicit that only non-overlapping five-year estimates should be compared over time, so on this point the article is on solid ground.
+
+### Pulling the ACS data: 
+```{r}
+pov_2010 <- get_acs(
+  geography = "tract",
+  variables = c( pov_total = "B17001_001",pov_poor = "B17001_002", wht_total = "B17001A_001",wht_poor = "B17001A_002"),
+  state = "PA",
+  county = "Philadelphia",
+  year = 2010,
+  output = "wide",
+  survey = "acs5"
+)
+
+pov_2017 <- get_acs(
+  geography = "tract",
+  variables = c( pov_total = "B17001_001",pov_poor = "B17001_002", wht_total = "B17001A_001",wht_poor = "B17001A_002"),
+  state = "PA",
+  county = "Philadelphia",
+  year = 2017,
+  output = "wide",
+  geometry = TRUE,
+  survey = "acs5"
+)
+
+setdiff(pov_2010$GEOID, pov_2017$GEOID)
+```
