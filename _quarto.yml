@@ -1,5 +1,8 @@
 project:
   type: website
+  render:
+    - "**/*.qmd"
+    - "!practice/"
   output-dir: docs
   execute-dir: project
 

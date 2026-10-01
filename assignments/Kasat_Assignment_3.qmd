@@ -25,6 +25,7 @@ This report tests whether the ACS data supports the claims in Alfred Lubrano's 2
 library(tidyverse)
 library(tidycensus)
 library(sf)
+library(gt)
 ```
 
 ## Part 1: Reconstruct
@@ -60,6 +61,23 @@ pov_2017 <- get_acs(
   geometry = TRUE,
   survey = "acs5"
 )
-
-setdiff(pov_2010$GEOID, pov_2017$GEOID)
 ```
+```{r}
+pov_2010 |>
+  head() |>
+  gt() |>
+  tab_header(title = "2006-2010 ACS poverty counts, first six tracts")
+```
+
+```{r}
+pov_2017 |>
+  head() |>
+  gt() |>
+  tab_header(title = "2013-2017 ACS poverty counts, first six tracts")
+```
+
+## Part 2: Test (code plus interpretation)
+
+county_data <- county_data %>%
+  mutate(moe_pct = moe / estimate * 100)
+
