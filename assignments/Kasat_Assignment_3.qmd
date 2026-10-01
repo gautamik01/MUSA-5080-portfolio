@@ -18,14 +18,13 @@ execute:
 
 This report tests whether the ACS data supports the claims in Alfred Lubrano's 2018 article, ["New Census figures on Philly neighborhoods show inequality, high numbers of whites living in poverty"](https://whyy.org/articles/new-census-figures-on-philly-neighborhoods-show-inequality-high-numbers-of-whites-living-in-poverty/) (WHYY / Philadelphia Inquirer, December 6, 2018). 
 
-## Setup
 
 ```{r}
+#| include: false
 library(tidyverse)
 library(tidycensus)
 library(sf)
 library(gt)
-#| include: false
 options(tigris_progress = FALSE)
 options(tigris_use_cache = TRUE)
 ```
@@ -41,9 +40,8 @@ The article does not document its method, so several choices are mine. It does n
 ### Overlap
 The two periods do not overlap. Census Bureau guidance is explicit that only non-overlapping five-year estimates should be compared over time, so on this point the article is on solid ground.
 
-### Pulling the ACS data
 ```{r}
-#| results: hide
+#| include: false
 pov_2010 <- get_acs(
   geography = "tract",
   variables = c( pov_total = "B17001_001",pov_poor = "B17001_002", wht_total = "B17001A_001",wht_poor = "B17001A_002"),
@@ -65,22 +63,6 @@ pov_2017 <- get_acs(
   survey = "acs5"
 )
 ```
-
-```{r}
-pov_2010 |>
-  head(3) |>
-  gt() |>
-  tab_header(title = "2006-2010 ACS poverty counts, first six tracts")
-```
-
-```{r}
-pov_2017 |>
-  st_drop_geometry() |>
-  head(3) |>
-  gt() |>
-  tab_header(title = "2013-2017 ACS poverty counts, first six tracts")
-```
-
 ## Part 2: Test (code plus interpretation)
 
 ### Computing poverty rates
