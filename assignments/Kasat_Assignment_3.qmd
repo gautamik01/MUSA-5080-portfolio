@@ -393,8 +393,6 @@ city_2017
 
 **Cannot be determined:** Philadelphia neighborhoods are not Census geographies, and the reporters never published which tracts they aggregated into which neighborhood. Fairhill's 61%, Eastwick's 12% to 26%, Holmesburg's 2% to 19%, Mayfair's 1% to 14%, and the 22-neighborhood claim are therefore uncheckable. The white poverty claims fail twice over: only 6 of 384 tracts produce a reliable white poverty rate, and 189 are unreliable outright. A 1% or 2% rate in a tract with few white residents is not a precise measurement of a small number. It is an imprecise measurement that lands on one.
 
-## Part 4 : Rewrite 
-
 ## Part 4: Rewrite
 
 Rewriting the article's opening paragraph:
