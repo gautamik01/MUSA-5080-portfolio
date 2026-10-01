@@ -1,5 +1,5 @@
 ---
-title: "Assignment3_Verify the Claim: Philadelphia Poverty Change"
+title: "Verify the Claim: Philadelphia Poverty Change"
 subtitle: "Testing if ACS data supports the 2018 news story"
 author: Gautami Kasat
 date: today
@@ -21,28 +21,27 @@ This report tests whether the ACS data supports the claims in Alfred Lubrano's 2
 ## Setup
 
 ```{r}
-#| include: false
 library(tidyverse)
 library(tidycensus)
 library(sf)
 library(gt)
-
+#| include: false
 options(tigris_progress = FALSE)
 options(tigris_use_cache = TRUE)
 ```
 
 ## Part 1: Reconstruct
 
-### Variables 
+### Variables
 I pulled four ACS variables. For overall poverty, B17001_002 counts people below the poverty level in the past twelve months, and B17001_001 gives the population for whom poverty status is determined. Because several claims are specifically about white poverty, I also pulled B17001A_001 and B17001A_002, the same table restricted to people identifying as white alone. ACS publishes counts, not rates, so both the rate and its margin of error have to be calculated. I used the 2006-2010 and 2013-2017 five-year estimates at the census tract level. Five-year estimates are the only ones that reach tracts; one-year estimates cover only areas of 65,000 people or more.
 
-### Assumptions 
+### Assumptions
 The article does not document its method, so several choices are mine. It does not name the ACS table it used; I assumed B17001. It says "white" without defining it, so I used B17001A, white alone, which includes people who also identify as Hispanic. And it reports neighborhood figures, which are not Census geographies: its reporters aggregated tracts into boundaries of their own choosing and never published which tracts went where, so my numbers will not match theirs. Every figure in the article is a point estimate, with no margins of error given. 
 
 ### Overlap
 The two periods do not overlap. Census Bureau guidance is explicit that only non-overlapping five-year estimates should be compared over time, so on this point the article is on solid ground.
 
-### Pulling the ACS data: 
+### Pulling the ACS data
 ```{r}
 #| results: hide
 pov_2010 <- get_acs(
@@ -277,6 +276,9 @@ pov_change  %>%
 
 The article's most striking white poverty figures are its lowest ones: 2% in Holmesburg, 1% in Mayfair. The table below shows the fifteen Philadelphia tracts with the lowest white poverty rates in 2006-2010, the period those claims start from. Every one of them carries a coefficient of variation above the reliability threshold, several by an order of magnitude. A rate of 1% or 2% in a tract with few white residents is not a precise measurement of a small number; it is an imprecise measurement that happens to land on a small number.
 
+## Where the article's smallest numbers come from
+The article's most striking white poverty figures are its smallest: 2% in Holmesburg, 1% in Mayfair. The first table below shows the fifteen tracts with the lowest white poverty rates in 2006-2010, the period those claims start from. Thirteen of the fifteen are unreliable.
+
 ```{r}
 pov_2010 %>%
    filter(!is.na(wht_pct), wht_pct > 0, wht_pct < 10) %>%
@@ -310,3 +312,133 @@ pov_2010 %>%
     "Reliability thresholds follow Jurjevich et al. (2018): CV < 12% reliable, 12-40% somewhat reliable, > 40% unreliable."
   )
 ```
+
+#### The same problem at the other end of the scale
+
+The second table shows the opposite end of the range, and the picture barely improves. Only two of the fifteen highest rates are reliable, and eight report a rate of exactly 100% with margins of error between 117 and 236 percentage points, on a scale that can only run from 0 to 100. The problem is not the size of the rate. It is the size of the population underneath it: a tract with a dozen white residents produces an unusable estimate whether the rate comes out at 2% or 100%. 
+
+
+```{r}
+pov_2010 %>%
+   filter(!is.na(wht_pct), wht_pct > 0) %>%
+  arrange(desc(wht_pct)) %>%
+  slice_head(n = 15) %>%
+  mutate(
+    dot = case_when(
+      wht_cv < 12 ~ "🟢",
+      wht_cv <= 40 ~ "🟡",
+      TRUE ~ "🔴"
+    ),
+    NAME = str_remove(NAME, ", Philadelphia County, Pennsylvania")
+  ) %>%
+  select(dot, NAME, wht_pct, wht_moe, wht_cv, wht_reliability) %>%
+  gt() %>%
+  fmt_number(columns = c(wht_pct, wht_moe, wht_cv), decimals = 1) %>%
+  cols_label(
+    dot = "",
+    NAME = "Tract",
+    wht_pct = "Rate (%)",
+    wht_moe = "MOE",
+    wht_cv = "CV (%)",
+    wht_reliability = "Reliability"
+  ) %>%
+  cols_align(align = "center", columns = dot) %>%
+  tab_header(
+    title = "Even the highest white poverty rates are mostly unreliable",
+    subtitle = "Fifteen tracts with the highest white poverty rates, 2006-2010 ACS"
+  ) %>%
+  tab_source_note(
+    "Reliability thresholds follow Jurjevich et al. (2018): CV < 12% reliable, 12-40% somewhat reliable, > 40% unreliable."
+  )
+```
+
+Across the city the pattern holds. Of Philadelphia's 384 tracts in 2006-2010, just 6 produce a white poverty rate that meets the standard threshold for reliability: 1.6% of the city. Another 189 tracts, 49.2%, are unreliable outright, and 10 more yield no rate at all. The article builds several of its sharpest claims on a measure that works in six tracts out of 384.
+
+### Why the estimates fail
+
+```{r}
+pov_2010 %>%
+  filter(!is.na(wht_cv), !is.infinite(wht_cv), wht_cv < 200) %>%
+  ggplot(aes(x = wht_totalE, y = wht_cv)) +
+  geom_point(alpha = 0.35, size = 1.2, color = "#1f5c8b") +
+  geom_hline(yintercept = 40, linetype = "dashed", linewidth = 0.3)+
+  annotate("text", x = 5500, y = 45, label = "Unreliable above this line",
+           size = 2.8, color = "grey40", hjust = 0.5) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 12, face = "bold"),
+    plot.subtitle = element_text(size = 10, color = "grey30"),
+    axis.title = element_text(size = 9, color = "grey30"),
+    axis.text = element_text(size = 8),
+    panel.grid = element_blank(),
+    axis.line = element_line(linewidth = 0.2, color = "grey70")
+  ) +
+  labs(
+    title = "Reliability depends on how many white residents a tract has",
+    subtitle = "Each dot is one Philadelphia tract, 2006-2010 ACS",
+    x = "White population for whom poverty status is determined",
+    y = "Coefficient of variation(%)"
+  )
+```
+
+Of the 370 tracts with a measurable white poverty rate in both periods, 72 show a change that is statistically detectable and 298 do not.
+
+### The citywide rate
+
+```{r}
+city_2017 <- pov_2017 %>%
+  st_drop_geometry() %>%
+  summarise(
+    poor_total = sum(pov_poorE, na.rm = TRUE),
+    poor_moe = moe_sum(pov_poorM, pov_poorE, na.rm = TRUE),
+    univ_total = sum(pov_totalE, na.rm = TRUE),
+    univ_moe = moe_sum(pov_totalM, pov_totalE, na.rm = TRUE)
+  ) %>%
+  mutate(
+    city_rate = poor_total / univ_total * 100,
+    city_moe = moe_prop(poor_total, univ_total, poor_moe, univ_moe) * 100
+  )
+
+city_2017
+```
+
+
+## Part 3 : Adjudicate
+
+**Supported:** The citywide poverty rate of 26% holds: aggregating all 384 tracts gives 25.8%, margin of error half a percentage point. This is the article's largest-scale claim and its most secure one, because summing 384 tracts shrinks the relative error to a fraction of what it is in any single tract. The article is also right not to compare overlapping periods.
+
+**Not supported:** The citywide white poverty figure (14.8% to 19.4%) comes from a one-year survey dropped into a story otherwise built on five-year estimates; Census guidance says not to compare the two. The framing fails too. Of 376 tracts, 36 show a detectable increase, 27 show a detectable decline the article never mentions, and 313 show no change distinguishable from zero. That is not a city sliding into poverty. It is a city where most places held steady and the rest moved both ways.
+
+**Cannot be determined:** Philadelphia neighborhoods are not Census geographies, and the reporters never published which tracts they aggregated into which neighborhood. Fairhill's 61%, Eastwick's 12% to 26%, Holmesburg's 2% to 19%, Mayfair's 1% to 14%, and the 22-neighborhood claim are therefore uncheckable. The white poverty claims fail twice over: only 6 of 384 tracts produce a reliable white poverty rate, and 189 are unreliable outright. A 1% or 2% rate in a tract with few white residents is not a precise measurement of a small number. It is an imprecise measurement that lands on one.
+
+## Part 4 : Rewrite 
+
+## Part 4: Rewrite
+
+Rewriting the article's opening paragraph:
+
+> A new five-year federal survey puts Philadelphia's poverty rate at about 26%, a figure the data supports with precision. What it does not support is a story of a city uniformly sliding into poverty. The Census divides Philadelphia into roughly 380 small statistical areas. Between the 2006-2010 and 2013-2017 surveys, fewer than 10% of them show a poverty increase large enough to be told apart from survey error. About 7% show a decrease. The remaining 83% moved too little, or were measured too imprecisely, to say either way. The survey is weakest where the headlines are loudest: in half the city it cannot measure white poverty reliably at all, because too few white residents live there to sample well. Philadelphia's poverty is real and citywide. Whether it is rising or falling block by block is mostly beyond what this data can show.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
