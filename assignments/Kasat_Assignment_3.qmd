@@ -26,6 +26,9 @@ library(tidyverse)
 library(tidycensus)
 library(sf)
 library(gt)
+
+options(tigris_progress = FALSE)
+options(tigris_use_cache = TRUE)
 ```
 
 ## Part 1: Reconstruct
@@ -41,6 +44,7 @@ The two periods do not overlap. Census Bureau guidance is explicit that only non
 
 ### Pulling the ACS data: 
 ```{r}
+#| results: hide
 pov_2010 <- get_acs(
   geography = "tract",
   variables = c( pov_total = "B17001_001",pov_poor = "B17001_002", wht_total = "B17001A_001",wht_poor = "B17001A_002"),
@@ -62,22 +66,247 @@ pov_2017 <- get_acs(
   survey = "acs5"
 )
 ```
+
 ```{r}
 pov_2010 |>
-  head() |>
+  head(3) |>
   gt() |>
   tab_header(title = "2006-2010 ACS poverty counts, first six tracts")
 ```
 
 ```{r}
 pov_2017 |>
-  head() |>
+  st_drop_geometry() |>
+  head(3) |>
   gt() |>
   tab_header(title = "2013-2017 ACS poverty counts, first six tracts")
 ```
 
 ## Part 2: Test (code plus interpretation)
 
-county_data <- county_data %>%
-  mutate(moe_pct = moe / estimate * 100)
+### Computing poverty rates
+ACS publishes counts, not rates, so both the rate and its uncertainty have to be built. Dividing the count below poverty by the universe gives the rate; `moe_prop()` then combines the two margins of error into a margin of error for the resulting proportion. The count's margin of error does not carry over.
 
+```{r}
+pov_2010 <- pov_2010 %>%
+  mutate(
+    pov_pct = pov_poorE / pov_totalE * 100,
+    pov_moe = moe_prop(pov_poorE, pov_totalE, pov_poorM, pov_totalM) * 100,
+    wht_pct = wht_poorE / wht_totalE * 100,
+    wht_moe = moe_prop(wht_poorE, wht_totalE, wht_poorM, wht_totalM) * 100
+    )
+```
+
+```{r}
+pov_2017 <- pov_2017 %>%
+  mutate(
+    pov_pct = pov_poorE / pov_totalE * 100,
+    pov_moe = moe_prop(pov_poorE, pov_totalE, pov_poorM, pov_totalM) * 100,
+    wht_pct = wht_poorE / wht_totalE * 100,
+    wht_moe = moe_prop(wht_poorE, wht_totalE, wht_poorM, wht_totalM) * 100
+    )
+```
+
+### Assessing reliability
+
+The coefficient of variation (CV) expresses the uncertainty as a share of the estimate, which makes estimates comparable. Following Jurjevich et al. (2018), I flagged a CV under 12% as reliable, 12 to 40% as somewhat reliable, and above 40% as unreliable.
+
+```{r}
+pov_2010 <- pov_2010 %>%
+  mutate(
+    pov_cv = (pov_moe/1.645) / pov_pct * 100,
+    pov_reliability = case_when(
+    pov_cv < 12 ~ "Reliable",
+    pov_cv < 40 ~ "Somewhat reliable",
+    pov_cv >= 40 ~ "Unreliable",
+    TRUE ~ NA_character_
+    )
+  )
+```
+
+```{r}
+pov_2010 <- pov_2010 %>%
+  mutate(
+    wht_cv = (wht_moe/1.645) / wht_pct * 100,
+    wht_reliability = case_when(
+    wht_cv < 12 ~ "Reliable",
+    wht_cv < 40 ~ "Somewhat reliable",
+    wht_cv >= 40 ~ "Unreliable",
+    TRUE ~ NA_character_
+    )
+  )
+```
+
+```{r}
+pov_2017 <- pov_2017 %>%
+  mutate(
+    pov_cv = (pov_moe/1.645) / pov_pct * 100,
+    pov_reliability = case_when(
+    pov_cv < 12 ~ "Reliable",
+    pov_cv < 40 ~ "Somewhat reliable",
+    pov_cv >= 40 ~ "Unreliable",
+    TRUE ~ NA_character_
+    )
+  )
+```
+
+```{r}
+pov_2017 <- pov_2017 %>%
+  mutate(
+    wht_cv = (wht_moe/1.645) / wht_pct * 100,
+    wht_reliability = case_when(
+    wht_cv < 12 ~ "Reliable",
+    wht_cv < 40 ~ "Somewhat reliable",
+    wht_cv >= 40 ~ "Unreliable",
+    TRUE ~ NA_character_
+    )
+  )
+```
+
+### Observations
+Reliability differs sharply between the two measures, and between the two periods. For overall poverty, 45 of 384 tracts were unreliable in 2006-2010, falling to 22 by 2013-2017. For white poverty the picture is far worse: 189 tracts, just under half the city, were unreliable in 2006-2010, improving to 111 by 2013-2017. This asymmetry matters because the article's white poverty claims are claims about change, and a change is only as sound as its weaker endpoint. In roughly half of Philadelphia, that endpoint will not hold.
+
+### Measuring change 
+
+To compare the two periods, each tract's 2010 and 2017 rates have to sit in the same row, so I joined the two datasets on GEOID. The change itself is simple subtraction, but its uncertainty is not: a difference between two estimates is less certain than either estimate alone, and the two margins of error combine by squaring, adding, and taking the square root rather than by simple addition. Dividing the change by that combined standard error gives a z score, which says how large the movement is relative to the noise around it. At 90% confidence the threshold is 1.645: above it, the change is distinguishable from zero; below it, the data cannot establish that anything happened.
+
+```{r}
+pov_change <- pov_2010 %>%
+  st_drop_geometry() %>%
+  select(GEOID, NAME, pov_pct, pov_moe, wht_pct, wht_moe) %>%
+  rename(pov_pct_10 = pov_pct, pov_moe_10 = pov_moe,
+         wht_pct_10 = wht_pct, wht_moe_10 = wht_moe) %>%
+  left_join(
+    pov_2017 %>%
+      select(GEOID, pov_pct, pov_moe, wht_pct, wht_moe) %>%
+      rename(pov_pct_17 = pov_pct, pov_moe_17 = pov_moe,
+             wht_pct_17 = wht_pct, wht_moe_17 = wht_moe),
+    by = "GEOID"
+  )
+```
+
+```{r}
+pov_change <- pov_change %>%
+  mutate(
+    pov_change = pov_pct_17 - pov_pct_10,
+    pov_se_diff = sqrt((pov_moe_10/ 1.645)^2 + (pov_moe_17/ 1.645)^2),
+    pov_moe_diff = pov_se_diff * 1.645,
+    pov_z = pov_change / pov_se_diff,
+    pov_sig = abs(pov_z) > 1.645
+    )
+```
+
+```{r}
+pov_change <- pov_change %>%
+  mutate(
+    wht_change = wht_pct_17 - wht_pct_10,
+    wht_se_diff = sqrt((wht_moe_10/ 1.645)^2 + (wht_moe_17/ 1.645)^2),
+    wht_moe_diff = wht_se_diff * 1.645,
+    wht_z = wht_change / wht_se_diff,
+    wht_sig = abs(wht_z) > 1.645
+    )
+```
+
+### Missing values
+```{r}
+#| include: false
+pov_change %>%
+  filter(is.na(pov_sig)) %>%
+  select(GEOID, NAME, pov_pct_10, pov_pct_17)
+
+pov_change %>%
+  filter(is.na(wht_sig), !is.na(pov_sig)) %>%
+  select(NAME, wht_pct_10, wht_pct_17)
+
+pov_change <- pov_change %>%
+  filter(!is.na(pov_sig))
+```
+
+Eight tracts produce no poverty rate in one or both periods. Seven of them carry numbers in the 9803 to 9809 range, which the Census Bureau reserves for special land use tracts: large areas with little or no residential population, such as parks, airports, and industrial or employment zones. 
+
+The eighth, Tract 50, sits at the southern tip of the city along the Delaware and behaves the same way. In all eight, the population for whom poverty status can be determined is effectively zero, so there is no rate to compute and the `NA` is correct rather than a gap in the data. I excluded them from the tract counts that follow. 
+
+Six further tracts drop out of the white poverty analysis for a different reason. Each has a measurable white poverty rate in one period but not the other, because the white population for whom poverty status could be determined was zero in the other period. Tract 103 is the clearest case: a white poverty rate of 100% in 2006-2010 and no measurable white population at all by 2013-2017. With no second endpoint there is no change to test, so these tracts are excluded from the white analysis but retained in the overall one.
+
+```{r}
+count(pov_change, pov_sig)
+```
+
+### How many tracts changed
+
+Of the 376 tracts with a measurable poverty rate in both periods, 63 show a change that is statistically distinguishable from zero at 90% confidence. The remaining 313, just over 83%, do not. That does not mean poverty held steady in those tracts; it means the data cannot establish that it moved. For most of Philadelphia, the margin of error on a seven-year change is wider than the change itself.
+
+
+```{r}
+pov_change  %>%
+  arrange(pov_change) %>%
+  mutate(rank = row_number()) %>%
+  ggplot(aes(x = rank, y = pov_change)) +
+  geom_errorbar(aes(ymin = pov_change - pov_moe_diff,
+                    ymax = pov_change + pov_moe_diff,
+                    color = pov_sig),
+                    width = 0, alpha = 0.4)+
+  geom_point(aes(color = pov_sig), size = 0.5)+
+  scale_color_manual(
+    values = c("TRUE" = "#1f5c8b", "FALSE" = "grey75"),
+    labels = c("TRUE" = "Detectable", "FALSE" = "Not detectable"),
+    name = NULL
+  ) +
+  geom_hline(yintercept = 0, linetype = "dashed", linewidth = 0.3) +
+  scale_x_continuous(breaks = seq(0, 376, by = 50)) +
+  coord_cartesian(ylim = c(-60, 60)) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 12, face = "bold"),
+    plot.subtitle = element_text(size = 10, color = "grey30"),
+    plot.caption = element_text(size = 7, color = "grey50", hjust = 0),
+    axis.title = element_text(size = 9, color = "grey30"),
+    axis.text = element_text(size = 8),
+    legend.text = element_text(size = 8),
+    legend.position = "bottom",
+    panel.grid = element_blank()
+  ) +
+  labs(
+    title = "Most Philadelphia tracts show no detectable change in poverty",
+    subtitle = "Poverty rate change between the 2006-2010 and 2013-2017 ACS estimates",
+    caption = str_wrap("Axis limited to ±60 points for readability; a small number of tracts have margins of error exceeding the possible range of the scale.", 100),
+     x = "Each tract, ordered from largest decline to largest increase", 
+    y = "Change in poverty rate (% points)"
+  )
+```
+
+The article's most striking white poverty figures are its lowest ones: 2% in Holmesburg, 1% in Mayfair. The table below shows the fifteen Philadelphia tracts with the lowest white poverty rates in 2006-2010, the period those claims start from. Every one of them carries a coefficient of variation above the reliability threshold, several by an order of magnitude. A rate of 1% or 2% in a tract with few white residents is not a precise measurement of a small number; it is an imprecise measurement that happens to land on a small number.
+
+```{r}
+pov_2010 %>%
+   filter(!is.na(wht_pct), wht_pct > 0, wht_pct < 10) %>%
+  arrange(wht_pct) %>%
+  slice_head(n = 15) %>%
+  mutate(
+    dot = case_when(
+      wht_cv < 12 ~ "🟢",
+      wht_cv <= 40 ~ "🟡",
+      TRUE ~ "🔴"
+    ),
+    NAME = str_remove(NAME, ", Philadelphia County, Pennsylvania")
+  ) %>%
+  select(dot, NAME, wht_pct, wht_moe, wht_cv, wht_reliability) %>%
+  gt() %>%
+  fmt_number(columns = c(wht_pct, wht_moe, wht_cv), decimals = 1) %>%
+  cols_label(
+    dot = "",
+    NAME = "Tract",
+    wht_pct = "Rate (%)",
+    wht_moe = "MOE",
+    wht_cv = "CV (%)",
+    wht_reliability = "Reliability"
+  ) %>%
+  cols_align(align = "center", columns = dot) %>%
+  tab_header(
+    title = "The lowest white poverty rates are the least reliable",
+    subtitle = "Fifteen tracts with the lowest white poverty rates, 2006-2010 ACS"
+  ) %>%
+  tab_source_note(
+    "Reliability thresholds follow Jurjevich et al. (2018): CV < 12% reliable, 12-40% somewhat reliable, > 40% unreliable."
+  )
+```
