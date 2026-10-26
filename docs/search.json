@@ -1,124 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Home",
-    "section": "",
-    "text": "Welcome to my portfolio for MUSA 5080: Public Policy Analytics at the University of Pennsylvania.\nThis site documents my work in the Master of Urban Spatial Analytics program — weekly notes, course assignments, and a final project applying data analysis to urban policy questions.\n\n\n\nI am a part designer, part climate detective, always chasing the question of how water, land, and cities can get along better. Trained as an architect, now deep in the world of landscape urbanism. Currently sharpening my data chops, because the future of design, she’d say, needs both a good eye and good numbers.Off the clock, she’s training for her next marathon, hunting down the best food in whatever city she’s in, and never says no to a good beer (❁´◡`❁)\n\n\n\n\nWeekly Notes — what I’m learning each week\nAssignments — analyses completed for the course\nAbout — more background and how to reach me\n\n\n\n\n\n\nEmail: gautamik@upenn.edu\nGitHub: @gautamik01"
-  },
-  {
-    "objectID": "index.html#about-me",
-    "href": "index.html#about-me",
-    "title": "Home",
-    "section": "",
-    "text": "I am a part designer, part climate detective, always chasing the question of how water, land, and cities can get along better. Trained as an architect, now deep in the world of landscape urbanism. Currently sharpening my data chops, because the future of design, she’d say, needs both a good eye and good numbers.Off the clock, she’s training for her next marathon, hunting down the best food in whatever city she’s in, and never says no to a good beer (❁´◡`❁)"
-  },
-  {
-    "objectID": "index.html#what-youll-find-here",
-    "href": "index.html#what-youll-find-here",
-    "title": "Home",
-    "section": "",
-    "text": "Weekly Notes — what I’m learning each week\nAssignments — analyses completed for the course\nAbout — more background and how to reach me"
-  },
-  {
-    "objectID": "index.html#get-in-touch",
-    "href": "index.html#get-in-touch",
-    "title": "Home",
-    "section": "",
-    "text": "Email: gautamik@upenn.edu\nGitHub: @gautamik01"
-  },
-  {
-    "objectID": "weekly-notes/week-01.html",
-    "href": "weekly-notes/week-01.html",
-    "title": "Week 1: Getting Set Up",
-    "section": "",
-    "text": "We set up our new portfolio! Its live. Understand some theories abour Quarto, Git, Github, R studio and what a typical workflow looks like. Getting used to the interface and understand Save, render, commit, Push :P"
-  },
-  {
-    "objectID": "weekly-notes/week-01.html#what-we-did",
-    "href": "weekly-notes/week-01.html#what-we-did",
-    "title": "Week 1: Getting Set Up",
-    "section": "",
-    "text": "We set up our new portfolio! Its live. Understand some theories abour Quarto, Git, Github, R studio and what a typical workflow looks like. Getting used to the interface and understand Save, render, commit, Push :P"
-  },
-  {
-    "objectID": "weekly-notes/week-01.html#key-concepts",
-    "href": "weekly-notes/week-01.html#key-concepts",
-    "title": "Week 1: Getting Set Up",
-    "section": "Key Concepts",
-    "text": "Key Concepts\nThree places a file can live:\n\nMy computer — where I edit\nGitHub.com — where it’s stored\nMy live site — what the world sees\n\nThe loop: Edit → Save → Render → Commit → Push → wait → refresh"
-  },
-  {
-    "objectID": "weekly-notes/week-01.html#proving-r-works",
-    "href": "weekly-notes/week-01.html#proving-r-works",
-    "title": "Week 1: Getting Set Up",
-    "section": "Proving R Works",
-    "text": "Proving R Works\nThe chunk below runs when this page renders. If you can see a result underneath it on your published site, R and Quarto are talking to each other correctly.\n\nsessionInfo()$R.version$version.string\n\n[1] \"R version 4.6.1 (2026-06-24 ucrt)\""
-  },
-  {
-    "objectID": "weekly-notes/week-01.html#reflection",
-    "href": "weekly-notes/week-01.html#reflection",
-    "title": "Week 1: Getting Set Up",
-    "section": "Reflection",
-    "text": "Reflection\n\nWhat I want out of this course: How and where do we apply these tools. Its uses and possibilities. Also with AI how much of it is actually relevant. We can easily build a website from scratch and edit it.\nOne thing I’m nervous about: I am new to programming and understanding syntax."
-  },
-  {
-    "objectID": "weekly-notes/week-01.html#questions-i-still-have",
-    "href": "weekly-notes/week-01.html#questions-i-still-have",
-    "title": "Week 1: Getting Set Up",
-    "section": "Questions I Still Have",
-    "text": "Questions I Still Have\n\nWith AI how can we actually leverage the skill and not just surender?\nI am truly trying to understand what would be its applications and its possibilities?"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About Me",
-    "section": "",
-    "text": "Master student of Urban Spatial Analytics (MUSA) at the Weitzman School of Design, University of Pennsylvania, taking my practice deeper into the data behind the design.\nTrained as both an architect and urbanist, I transform climate science into adaptive urban strategies that treat environmental change not as a threat, but as a catalyst for resilience. I design with water flow, seasonal flooding, and ecological shift, not against them.\nMy work spans projected climate scenarios, participatory planning, and interventions like floodable landscapes and climate-adaptive urban foodscapes. Always at the intersection of environmental data, policy, and design, and always in pursuit of strategies that are equitable, not just forward-thinking."
-  },
-  {
-    "objectID": "about.html#background",
-    "href": "about.html#background",
-    "title": "About Me",
-    "section": "",
-    "text": "Master student of Urban Spatial Analytics (MUSA) at the Weitzman School of Design, University of Pennsylvania, taking my practice deeper into the data behind the design.\nTrained as both an architect and urbanist, I transform climate science into adaptive urban strategies that treat environmental change not as a threat, but as a catalyst for resilience. I design with water flow, seasonal flooding, and ecological shift, not against them.\nMy work spans projected climate scenarios, participatory planning, and interventions like floodable landscapes and climate-adaptive urban foodscapes. Always at the intersection of environmental data, policy, and design, and always in pursuit of strategies that are equitable, not just forward-thinking."
-  },
-  {
-    "objectID": "about.html#skills",
-    "href": "about.html#skills",
-    "title": "About Me",
-    "section": "Skills",
-    "text": "Skills\n\n\nLanguages & Tools: R, Quarto, Git, Phython\nSpatial: (add as you learn)\nData: US Census / ACS via tidycensus"
-  },
-  {
-    "objectID": "about.html#contact",
-    "href": "about.html#contact",
-    "title": "About Me",
-    "section": "Contact",
-    "text": "Contact\n\n\nEmail: gautamik@upenn.edu\nGitHub: @gautamik01"
-  },
-  {
-    "objectID": "assignments/index.html",
-    "href": "assignments/index.html",
-    "title": "Assignments",
-    "section": "",
-    "text": "Completed assignments for MUSA 5080. New assignments appear here automatically once you add the .qmd file to this folder and render.\n\n\n\n\n\n\n\n\n\n\n\nAssignment 4: Building Features, Watching What Happens\n\n\n\n\n\n\n\n\nOct 16, 2026\n\n\n\n\n\n\n\nAssignment 3: Verify the Claim - Philadelphia Poverty Change\n\n\n\n\n\n\n\n\nSep 25, 2026\n\n\n\n\n\n\n\nAssignment 2: Who Do We Know the Least About?\n\n\n\n\n\n\n\n\nSep 11, 2026\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "weekly-notes/index.html",
-    "href": "weekly-notes/index.html",
-    "title": "Weekly Notes",
-    "section": "",
-    "text": "Notes from each week of MUSA 5080. New entries appear here automatically — add a .qmd file to this folder and render.\n\n\n\n\n\n\n\n\n\n\n\nWeek 2: Census Data\n\n\ntable functions and acs data\n\n\n\n\n\nSep 4, 2026\n\n\n\n\n\n\n\nWeek 1: Getting Set Up\n\n\nFirst impressions, and getting the workflow running.\n\n\n\n\n\nAug 28, 2026\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "data/readme.html",
-    "href": "data/readme.html",
-    "title": "",
-    "section": "",
-    "text": "Code\n\n\n\n\nData files for MUSA 5080\nDownload assignment data from Canvas and save it here. Do not rename the files! Have a nice day :)"
-  },
-  {
     "objectID": "weekly-notes/week-02.html",
     "href": "weekly-notes/week-02.html",
     "title": "Week 2: Census Data",
@@ -161,130 +42,18 @@
     "text": "Questions I Still Have\n\nDifference between different formates wide, character, string, float, etc.. ? Where to use what ?"
   },
   {
-    "objectID": "assignments/assignment2.html",
-    "href": "assignments/assignment2.html",
-    "title": "Assignment 2: Who Do We Know the Least About?",
+    "objectID": "weekly-notes/index.html",
+    "href": "weekly-notes/index.html",
+    "title": "Weekly Notes",
     "section": "",
-    "text": "library(tidyverse)\nlibrary(tidycensus)"
+    "text": "Notes from each week of MUSA 5080. New entries appear here automatically — add a .qmd file to this folder and render.\n\n\n\n\n\n\n\n\n\n\n\nWeek 2: Census Data\n\n\ntable functions and acs data\n\n\n\n\n\nSep 4, 2026\n\n\n\n\n\n\n\nWeek 1: Getting Set Up\n\n\nFirst impressions, and getting the workflow running.\n\n\n\n\n\nAug 28, 2026\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "assignments/assignment2.html#setup",
-    "href": "assignments/assignment2.html#setup",
-    "title": "Assignment 2: Who Do We Know the Least About?",
+    "objectID": "assignments/index.html",
+    "href": "assignments/index.html",
+    "title": "Assignments",
     "section": "",
-    "text": "library(tidyverse)\nlibrary(tidycensus)"
-  },
-  {
-    "objectID": "assignments/assignment2.html#the-question",
-    "href": "assignments/assignment2.html#the-question",
-    "title": "Assignment 2: Who Do We Know the Least About?",
-    "section": "The question",
-    "text": "The question\nEvery number the American Community Survey publishes is an estimate drawn from a sample, not a count. That means every number comes with a margin of error — a statement about how wrong it might be.\nMost people ignore it. In this assignment, you won’t.\nIn this analysis, I look at median home value across counties in Maryland, and ask which communities we measure most and least reliably. As someone house-hunting in the Baltimore, I wanted to know how reliable home value estimates really are before treating them as fact. This matters beyond my own search as well since, shaky estimates affect property tax assessments and lending decisions too, so it’s useful for anyone relying on this data, not just buyers."
-  },
-  {
-    "objectID": "assignments/assignment2.html#choosing-what-to-measure",
-    "href": "assignments/assignment2.html#choosing-what-to-measure",
-    "title": "Assignment 2: Who Do We Know the Least About?",
-    "section": "Choosing what to measure",
-    "text": "Choosing what to measure\n\nmy_state &lt;- \"MD\"        # two-letter abbreviation, in quotes\nmy_variable &lt;- \"B25077_001\"     # the variable code, in quotes"
-  },
-  {
-    "objectID": "assignments/assignment2.html#pulling-the-data",
-    "href": "assignments/assignment2.html#pulling-the-data",
-    "title": "Assignment 2: Who Do We Know the Least About?",
-    "section": "Pulling the data",
-    "text": "Pulling the data\n\ncounty_data &lt;- get_acs(\n  geography = \"county\",\n  variables = my_variable,\n  state = my_state,\n  year = 2023,\n  survey = \"acs5\"\n)\n\nLet’s look at what came back.\n\ndim(county_data)\n\n[1] 24  5\n\nhead(county_data)\n\n# A tibble: 6 × 5\n  GEOID NAME                          variable   estimate   moe\n  &lt;chr&gt; &lt;chr&gt;                         &lt;chr&gt;         &lt;dbl&gt; &lt;dbl&gt;\n1 24001 Allegany County, Maryland     B25077_001   149200  5832\n2 24003 Anne Arundel County, Maryland B25077_001   450300  4485\n3 24005 Baltimore County, Maryland    B25077_001   330000  3148\n4 24009 Calvert County, Maryland      B25077_001   440200  8554\n5 24011 Caroline County, Maryland     B25077_001   272400  7506\n6 24013 Carroll County, Maryland      B25077_001   406400  7074\n\n\nI got 24 rows and it matches with the number of counties in the state. Since Maryland officially consists of 23 counties and 1 independent city (Baltimore City), which the Census Bureau treats as a “county equivalent”"
-  },
-  {
-    "objectID": "assignments/assignment2.html#how-big-is-the-margin-of-error",
-    "href": "assignments/assignment2.html#how-big-is-the-margin-of-error",
-    "title": "Assignment 2: Who Do We Know the Least About?",
-    "section": "How big is the margin of error?",
-    "text": "How big is the margin of error?\nA margin of error of 3,000 means something very different for an estimate of 20,000 than for an estimate of 200,000. To compare across places, we need it as a percentage.\n\ncounty_data &lt;- county_data %&gt;%\n  mutate(moe_pct = moe / estimate * 100)\n\nNow sort to see which counties are measured least reliably.\n\ncounty_data %&gt;%\n  arrange(desc(moe_pct)) %&gt;%\n  select(NAME, estimate, moe, moe_pct) %&gt;%\n  head(10)\n\n# A tibble: 10 × 4\n   NAME                          estimate   moe moe_pct\n   &lt;chr&gt;                            &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;\n 1 Somerset County, Maryland       164300 14949    9.10\n 2 Kent County, Maryland           307100 17782    5.79\n 3 Garrett County, Maryland        217000 10296    4.74\n 4 Dorchester County, Maryland     252300 11410    4.52\n 5 Talbot County, Maryland         398300 16471    4.14\n 6 Allegany County, Maryland       149200  5832    3.91\n 7 Worcester County, Maryland      348100 12766    3.67\n 8 Cecil County, Maryland          311800  8842    2.84\n 9 Caroline County, Maryland       272400  7506    2.76\n10 Queen Anne's County, Maryland   441800 10627    2.41\n\n\nThe county with the highest moe is Somerset County, Maryland. Its moe_pct is 9.098600%"
-  },
-  {
-    "objectID": "assignments/assignment2.html#sorting-counties-into-reliability-categories",
-    "href": "assignments/assignment2.html#sorting-counties-into-reliability-categories",
-    "title": "Assignment 2: Who Do We Know the Least About?",
-    "section": "Sorting counties into reliability categories",
-    "text": "Sorting counties into reliability categories\n\ncounty_data &lt;- county_data %&gt;%\n  mutate(reliability = case_when(\n    moe_pct &lt; 2  ~ \"High confidence\",\n    moe_pct &lt; 4 ~ \"Moderate\",\n    TRUE         ~ \"Low confidence\"\n  ))\n\ncount(county_data, reliability)\n\n# A tibble: 3 × 2\n  reliability         n\n  &lt;chr&gt;           &lt;int&gt;\n1 High confidence    12\n2 Low confidence      5\n3 Moderate            7\n\n\nHigh confidence reliability has 12 counties, Moderate has 7 counties and Low confidence has 5 counties"
-  },
-  {
-    "objectID": "assignments/assignment2.html#is-the-margin-of-error-bigger-in-small-places",
-    "href": "assignments/assignment2.html#is-the-margin-of-error-bigger-in-small-places",
-    "title": "Assignment 2: Who Do We Know the Least About?",
-    "section": "Is the margin of error bigger in small places?",
-    "text": "Is the margin of error bigger in small places?\nTo answer this we need population and our variable side by side, in the same row. That means a wide pull.\n\ncounty_wide &lt;- get_acs(\n  geography = \"county\",\n  variables = c(myvar = my_variable,\n                pop   = \"B01003_001\"),\n  state = my_state,\n  year = 2023,\n  survey = \"acs5\",\n  output = \"wide\"\n)\n\nhead(county_wide)\n\n# A tibble: 6 × 6\n  GEOID NAME                          myvarE myvarM   popE  popM\n  &lt;chr&gt; &lt;chr&gt;                          &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt;\n1 24001 Allegany County, Maryland     149200   5832  67762    NA\n2 24003 Anne Arundel County, Maryland 450300   4485 590936    NA\n3 24005 Baltimore County, Maryland    330000   3148 849586    NA\n4 24009 Calvert County, Maryland      440200   8554  93791    NA\n5 24011 Caroline County, Maryland     272400   7506  33406    NA\n6 24013 Carroll County, Maryland      406400   7074 174318    NA\n\n\n\ncounty_wide &lt;- county_wide %&gt;%\n  mutate(moe_pct = myvarM / myvarE * 100) %&gt;%\n  mutate(reliability = case_when(\n    moe_pct &lt; 2  ~ \"High confidence\",\n    moe_pct &lt; 4 ~ \"Moderate\",\n    TRUE         ~ \"Low confidence\"\n  ))\n\nNow compare the average population of counties in each reliability category.\n\ncounty_wide %&gt;%\n  group_by(reliability) %&gt;%\n  summarize(\n    n_counties = n(),\n    avg_population = mean(popE)\n  )\n\n# A tibble: 3 × 3\n  reliability     n_counties avg_population\n  &lt;chr&gt;                &lt;int&gt;          &lt;dbl&gt;\n1 High confidence         12        458292.\n2 Low confidence           5         28596.\n3 Moderate                 7         75465.\n\n\nHigh-confidence counties average about 458,000 people. That’s roughly 16 times more than low-confidence counties (about 29,000), with moderate counties in between at about 75,000. This matches what I expected: the ACS samples fewer households in smaller counties, so their estimates carry more uncertainty. Simply put, the most populated counties have the smallest margin of error and thus the highest confidence, and vice-versa"
-  },
-  {
-    "objectID": "assignments/assignment2.html#what-this-means-for-policy",
-    "href": "assignments/assignment2.html#what-this-means-for-policy",
-    "title": "Assignment 2: Who Do We Know the Least About?",
-    "section": "What this means for policy",
-    "text": "What this means for policy\nThe Maryland counties we know least about, statistically speaking, are Kent, Somerset, Garrett, and Dorchester. Each shows the highest moe_pct in the dataset, meaning their median home value estimates carry the largest margin of error relative to the estimate itself. This isn’t a coincidence: these are also the state’s least populated counties, and since the ACS is a sample survey, smaller counties yield smaller samples, which produces less statistically reliable estimates. Large, densely populated counties like Montgomery, Prince George’s, and Baltimore City, by contrast, are surveyed far more heavily and show much smaller margins of error.\nIf a state agency used median home value to allocate funding, for example, directing more support toward counties with lower home values and treated every county’s number as equally certain; the small, low-reliability counties would bear all the risk. If a county like Somerset’s true home value is actually higher than its shaky estimate suggests, it risks receiving too little funding relative to its real need. If the true value is actually lower, it risks receiving more than it needs, pulling funding away from counties that could use it more. Meanwhile, large counties like Montgomery are essentially unaffected by this risk, since their estimates are already precise. In short, the places we measure least reliably are exactly the places most likely to be misjudged when that data drives real decisions."
-  },
-  {
-    "objectID": "assignments/Kasat_Assignment_3.html",
-    "href": "assignments/Kasat_Assignment_3.html",
-    "title": "Verify the Claim: Philadelphia Poverty Change",
-    "section": "",
-    "text": "This report tests whether the ACS data supports the claims in Alfred Lubrano’s 2018 article, “New Census figures on Philly neighborhoods show inequality, high numbers of whites living in poverty” (WHYY / Philadelphia Inquirer, December 6, 2018)."
-  },
-  {
-    "objectID": "assignments/Kasat_Assignment_3.html#the-enquiry",
-    "href": "assignments/Kasat_Assignment_3.html#the-enquiry",
-    "title": "Verify the Claim: Philadelphia Poverty Change",
-    "section": "",
-    "text": "This report tests whether the ACS data supports the claims in Alfred Lubrano’s 2018 article, “New Census figures on Philly neighborhoods show inequality, high numbers of whites living in poverty” (WHYY / Philadelphia Inquirer, December 6, 2018)."
-  },
-  {
-    "objectID": "assignments/Kasat_Assignment_3.html#setup",
-    "href": "assignments/Kasat_Assignment_3.html#setup",
-    "title": "Verify the Claim: Philadelphia Poverty Change",
-    "section": "Setup",
-    "text": "Setup\n\n\nView Code\nlibrary(tidyverse)\nlibrary(tidycensus)\nlibrary(sf)\nlibrary(gt)\n#| include: false\noptions(tigris_progress = FALSE)\noptions(tigris_use_cache = TRUE)"
-  },
-  {
-    "objectID": "assignments/Kasat_Assignment_3.html#part-1-reconstruct",
-    "href": "assignments/Kasat_Assignment_3.html#part-1-reconstruct",
-    "title": "Verify the Claim: Philadelphia Poverty Change",
-    "section": "Part 1: Reconstruct",
-    "text": "Part 1: Reconstruct\n\nVariables\nI pulled four ACS variables. For overall poverty, B17001_002 counts people below the poverty level in the past twelve months, and B17001_001 gives the population for whom poverty status is determined. Because several claims are specifically about white poverty, I also pulled B17001A_001 and B17001A_002, the same table restricted to people identifying as white alone. ACS publishes counts, not rates, so both the rate and its margin of error have to be calculated. I used the 2006-2010 and 2013-2017 five-year estimates at the census tract level. Five-year estimates are the only ones that reach tracts; one-year estimates cover only areas of 65,000 people or more.\n\n\nAssumptions\nThe article does not document its method, so several choices are mine. It does not name the ACS table it used; I assumed B17001. It says “white” without defining it, so I used B17001A, white alone, which includes people who also identify as Hispanic. And it reports neighborhood figures, which are not Census geographies: its reporters aggregated tracts into boundaries of their own choosing and never published which tracts went where, so my numbers will not match theirs. Every figure in the article is a point estimate, with no margins of error given.\n\n\nOverlap\nThe two periods do not overlap. Census Bureau guidance is explicit that only non-overlapping five-year estimates should be compared over time, so on this point the article is on solid ground."
-  },
-  {
-    "objectID": "assignments/Kasat_Assignment_3.html#part-2-test-code-plus-interpretation",
-    "href": "assignments/Kasat_Assignment_3.html#part-2-test-code-plus-interpretation",
-    "title": "Verify the Claim: Philadelphia Poverty Change",
-    "section": "Part 2: Test (code plus interpretation)",
-    "text": "Part 2: Test (code plus interpretation)\n\nComputing poverty rates\nACS publishes counts, not rates, so both the rate and its uncertainty have to be built. Dividing the count below poverty by the universe gives the rate; moe_prop() then combines the two margins of error into a margin of error for the resulting proportion. The count’s margin of error does not carry over.\n\n\nView Code\npov_2010 &lt;- pov_2010 %&gt;%\n  mutate(\n    pov_pct = pov_poorE / pov_totalE * 100,\n    pov_moe = moe_prop(pov_poorE, pov_totalE, pov_poorM, pov_totalM) * 100,\n    wht_pct = wht_poorE / wht_totalE * 100,\n    wht_moe = moe_prop(wht_poorE, wht_totalE, wht_poorM, wht_totalM) * 100\n    )\n\n\n\n\nView Code\npov_2017 &lt;- pov_2017 %&gt;%\n  mutate(\n    pov_pct = pov_poorE / pov_totalE * 100,\n    pov_moe = moe_prop(pov_poorE, pov_totalE, pov_poorM, pov_totalM) * 100,\n    wht_pct = wht_poorE / wht_totalE * 100,\n    wht_moe = moe_prop(wht_poorE, wht_totalE, wht_poorM, wht_totalM) * 100\n    )\n\n\n\n\nAssessing reliability\nThe coefficient of variation (CV) expresses the uncertainty as a share of the estimate, which makes estimates comparable. Following Jurjevich et al. (2018), I flagged a CV under 12% as reliable, 12 to 40% as somewhat reliable, and above 40% as unreliable.\n\n\nView Code\npov_2010 &lt;- pov_2010 %&gt;%\n  mutate(\n    pov_cv = (pov_moe/1.645) / pov_pct * 100,\n    pov_reliability = case_when(\n    pov_cv &lt; 12 ~ \"Reliable\",\n    pov_cv &lt; 40 ~ \"Somewhat reliable\",\n    pov_cv &gt;= 40 ~ \"Unreliable\",\n    TRUE ~ NA_character_\n    )\n  )\n\n\n\n\nView Code\npov_2010 &lt;- pov_2010 %&gt;%\n  mutate(\n    wht_cv = (wht_moe/1.645) / wht_pct * 100,\n    wht_reliability = case_when(\n    wht_cv &lt; 12 ~ \"Reliable\",\n    wht_cv &lt; 40 ~ \"Somewhat reliable\",\n    wht_cv &gt;= 40 ~ \"Unreliable\",\n    TRUE ~ NA_character_\n    )\n  )\n\n\n\n\nView Code\npov_2017 &lt;- pov_2017 %&gt;%\n  mutate(\n    pov_cv = (pov_moe/1.645) / pov_pct * 100,\n    pov_reliability = case_when(\n    pov_cv &lt; 12 ~ \"Reliable\",\n    pov_cv &lt; 40 ~ \"Somewhat reliable\",\n    pov_cv &gt;= 40 ~ \"Unreliable\",\n    TRUE ~ NA_character_\n    )\n  )\n\n\n\n\nView Code\npov_2017 &lt;- pov_2017 %&gt;%\n  mutate(\n    wht_cv = (wht_moe/1.645) / wht_pct * 100,\n    wht_reliability = case_when(\n    wht_cv &lt; 12 ~ \"Reliable\",\n    wht_cv &lt; 40 ~ \"Somewhat reliable\",\n    wht_cv &gt;= 40 ~ \"Unreliable\",\n    TRUE ~ NA_character_\n    )\n  )\n\n\n\n\nObservations\nReliability differs sharply between the two measures, and between the two periods. For overall poverty, 45 of 384 tracts were unreliable in 2006-2010, falling to 22 by 2013-2017. For white poverty the picture is far worse: 189 tracts, just under half the city, were unreliable in 2006-2010, improving to 111 by 2013-2017. This asymmetry matters because the article’s white poverty claims are claims about change, and a change is only as sound as its weaker endpoint. In roughly half of Philadelphia, that endpoint will not hold.\n\n\nMeasuring change\nTo compare the two periods, each tract’s 2010 and 2017 rates have to sit in the same row, so I joined the two datasets on GEOID. The change itself is simple subtraction, but its uncertainty is not: a difference between two estimates is less certain than either estimate alone, and the two margins of error combine by squaring, adding, and taking the square root rather than by simple addition. Dividing the change by that combined standard error gives a z score, which says how large the movement is relative to the noise around it. At 90% confidence the threshold is 1.645: above it, the change is distinguishable from zero; below it, the data cannot establish that anything happened.\n\n\nView Code\npov_change &lt;- pov_2010 %&gt;%\n  st_drop_geometry() %&gt;%\n  select(GEOID, NAME, pov_pct, pov_moe, wht_pct, wht_moe) %&gt;%\n  rename(pov_pct_10 = pov_pct, pov_moe_10 = pov_moe,\n         wht_pct_10 = wht_pct, wht_moe_10 = wht_moe) %&gt;%\n  left_join(\n    pov_2017 %&gt;%\n      select(GEOID, pov_pct, pov_moe, wht_pct, wht_moe) %&gt;%\n      rename(pov_pct_17 = pov_pct, pov_moe_17 = pov_moe,\n             wht_pct_17 = wht_pct, wht_moe_17 = wht_moe),\n    by = \"GEOID\"\n  )\n\n\n\n\nView Code\npov_change &lt;- pov_change %&gt;%\n  mutate(\n    pov_change = pov_pct_17 - pov_pct_10,\n    pov_se_diff = sqrt((pov_moe_10/ 1.645)^2 + (pov_moe_17/ 1.645)^2),\n    pov_moe_diff = pov_se_diff * 1.645,\n    pov_z = pov_change / pov_se_diff,\n    pov_sig = abs(pov_z) &gt; 1.645\n    )\n\n\n\n\nView Code\npov_change &lt;- pov_change %&gt;%\n  mutate(\n    wht_change = wht_pct_17 - wht_pct_10,\n    wht_se_diff = sqrt((wht_moe_10/ 1.645)^2 + (wht_moe_17/ 1.645)^2),\n    wht_moe_diff = wht_se_diff * 1.645,\n    wht_z = wht_change / wht_se_diff,\n    wht_sig = abs(wht_z) &gt; 1.645\n    )\n\n\n\n\nMissing values\nEight tracts produce no poverty rate in one or both periods. Seven of them carry numbers in the 9803 to 9809 range, which the Census Bureau reserves for special land use tracts: large areas with little or no residential population, such as parks, airports, and industrial or employment zones.\nThe eighth, Tract 50, sits at the southern tip of the city along the Delaware and behaves the same way. In all eight, the population for whom poverty status can be determined is effectively zero, so there is no rate to compute and the NA is correct rather than a gap in the data. I excluded them from the tract counts that follow.\nSix further tracts drop out of the white poverty analysis for a different reason. Each has a measurable white poverty rate in one period but not the other, because the white population for whom poverty status could be determined was zero in the other period. Tract 103 is the clearest case: a white poverty rate of 100% in 2006-2010 and no measurable white population at all by 2013-2017. With no second endpoint there is no change to test, so these tracts are excluded from the white analysis but retained in the overall one.\n\n\nView Code\ncount(pov_change, pov_sig)\n\n\n# A tibble: 2 × 2\n  pov_sig     n\n  &lt;lgl&gt;   &lt;int&gt;\n1 FALSE     313\n2 TRUE       63\n\n\n\n\nHow many tracts changed\nOf the 376 tracts with a measurable poverty rate in both periods, 63 show a change that is statistically distinguishable from zero at 90% confidence. The remaining 313, just over 83%, do not. That does not mean poverty held steady in those tracts; it means the data cannot establish that it moved. For most of Philadelphia, the margin of error on a seven-year change is wider than the change itself.\n\n\nView Code\npov_change  %&gt;%\n  arrange(pov_change) %&gt;%\n  mutate(rank = row_number()) %&gt;%\n  ggplot(aes(x = rank, y = pov_change)) +\n  geom_errorbar(aes(ymin = pov_change - pov_moe_diff,\n                    ymax = pov_change + pov_moe_diff,\n                    color = pov_sig),\n                    width = 0, alpha = 0.4)+\n  geom_point(aes(color = pov_sig), size = 0.5)+\n  scale_color_manual(\n    values = c(\"TRUE\" = \"#1f5c8b\", \"FALSE\" = \"grey75\"),\n    labels = c(\"TRUE\" = \"Detectable\", \"FALSE\" = \"Not detectable\"),\n    name = NULL\n  ) +\n  geom_hline(yintercept = 0, linetype = \"dashed\", linewidth = 0.3) +\n  scale_x_continuous(breaks = seq(0, 376, by = 50)) +\n  coord_cartesian(ylim = c(-60, 60)) +\n  theme_minimal() +\n  theme(\n    plot.title = element_text(size = 12, face = \"bold\"),\n    plot.subtitle = element_text(size = 10, color = \"grey30\"),\n    plot.caption = element_text(size = 7, color = \"grey50\", hjust = 0),\n    axis.title = element_text(size = 9, color = \"grey30\"),\n    axis.text = element_text(size = 8),\n    legend.text = element_text(size = 8),\n    legend.position = \"bottom\",\n    panel.grid = element_blank()\n  ) +\n  labs(\n    title = \"Most Philadelphia tracts show no detectable change in poverty\",\n    subtitle = \"Poverty rate change between the 2006-2010 and 2013-2017 ACS estimates\",\n    caption = str_wrap(\"Axis limited to ±60 points for readability; a small number of tracts have margins of error exceeding the possible range of the scale.\", 100),\n     x = \"Each tract, ordered from largest decline to largest increase\", \n    y = \"Change in poverty rate (% points)\"\n  )\n\n\n\n\n\n\n\n\n\nThe article’s most striking white poverty figures are its lowest ones: 2% in Holmesburg, 1% in Mayfair. The table below shows the fifteen Philadelphia tracts with the lowest white poverty rates in 2006-2010, the period those claims start from. Every one of them carries a coefficient of variation above the reliability threshold, several by an order of magnitude. A rate of 1% or 2% in a tract with few white residents is not a precise measurement of a small number; it is an imprecise measurement that happens to land on a small number."
-  },
-  {
-    "objectID": "assignments/Kasat_Assignment_3.html#where-the-articles-smallest-numbers-come-from",
-    "href": "assignments/Kasat_Assignment_3.html#where-the-articles-smallest-numbers-come-from",
-    "title": "Verify the Claim: Philadelphia Poverty Change",
-    "section": "Where the article’s smallest numbers come from",
-    "text": "Where the article’s smallest numbers come from\nThe article’s most striking white poverty figures are its smallest: 2% in Holmesburg, 1% in Mayfair. The first table below shows the fifteen tracts with the lowest white poverty rates in 2006-2010, the period those claims start from. Thirteen of the fifteen are unreliable.\n\n\nView Code\npov_2010 %&gt;%\n   filter(!is.na(wht_pct), wht_pct &gt; 0, wht_pct &lt; 10) %&gt;%\n  arrange(wht_pct) %&gt;%\n  slice_head(n = 15) %&gt;%\n  mutate(\n    dot = case_when(\n      wht_cv &lt; 12 ~ \"🟢\",\n      wht_cv &lt;= 40 ~ \"🟡\",\n      TRUE ~ \"🔴\"\n    ),\n    NAME = str_remove(NAME, \", Philadelphia County, Pennsylvania\")\n  ) %&gt;%\n  select(dot, NAME, wht_pct, wht_moe, wht_cv, wht_reliability) %&gt;%\n  gt() %&gt;%\n  fmt_number(columns = c(wht_pct, wht_moe, wht_cv), decimals = 1) %&gt;%\n  cols_label(\n    dot = \"\",\n    NAME = \"Tract\",\n    wht_pct = \"Rate (%)\",\n    wht_moe = \"MOE\",\n    wht_cv = \"CV (%)\",\n    wht_reliability = \"Reliability\"\n  ) %&gt;%\n  cols_align(align = \"center\", columns = dot) %&gt;%\n  tab_header(\n    title = \"The lowest white poverty rates are the least reliable\",\n    subtitle = \"Fifteen tracts with the lowest white poverty rates, 2006-2010 ACS\"\n  ) %&gt;%\n  tab_source_note(\n    \"Reliability thresholds follow Jurjevich et al. (2018): CV &lt; 12% reliable, 12-40% somewhat reliable, &gt; 40% unreliable.\"\n  )\n\n\n\n\n\n\n\n\nThe lowest white poverty rates are the least reliable\n\n\nFifteen tracts with the lowest white poverty rates, 2006-2010 ACS\n\n\n\nTract\nRate (%)\nMOE\nCV (%)\nReliability\n\n\n\n\n🔴\nCensus Tract 236\n0.9\n1.4\n97.7\nUnreliable\n\n\n🔴\nCensus Tract 384\n1.2\n1.1\n53.9\nUnreliable\n\n\n🔴\nCensus Tract 220\n1.6\n2.6\n95.9\nUnreliable\n\n\n🔴\nCensus Tract 267\n2.0\n2.9\n90.0\nUnreliable\n\n\n🔴\nCensus Tract 305.02\n2.3\n2.1\n57.3\nUnreliable\n\n\n🟡\nCensus Tract 351\n2.3\n1.4\n36.0\nSomewhat reliable\n\n\n🔴\nCensus Tract 10.01\n2.3\n2.7\n70.3\nUnreliable\n\n\n🔴\nCensus Tract 339\n2.4\n2.9\n75.7\nUnreliable\n\n\n🔴\nCensus Tract 365.02\n2.4\n2.0\n51.3\nUnreliable\n\n\n🟡\nCensus Tract 352\n2.7\n1.6\n37.2\nSomewhat reliable\n\n\n🔴\nCensus Tract 136.01\n2.8\n2.4\n51.2\nUnreliable\n\n\n🔴\nCensus Tract 308\n2.9\n1.9\n40.2\nUnreliable\n\n\n🔴\nCensus Tract 255\n3.4\n3.8\n66.4\nUnreliable\n\n\n🔴\nCensus Tract 61\n3.5\n4.5\n78.5\nUnreliable\n\n\n🔴\nCensus Tract 270\n3.5\n3.7\n65.0\nUnreliable\n\n\n\nReliability thresholds follow Jurjevich et al. (2018): CV &lt; 12% reliable, 12-40% somewhat reliable, &gt; 40% unreliable.\n\n\n\n\n\n\n\n\n\nThe same problem at the other end of the scale\nThe second table shows the opposite end of the range, and the picture barely improves. Only two of the fifteen highest rates are reliable, and eight report a rate of exactly 100% with margins of error between 117 and 236 percentage points, on a scale that can only run from 0 to 100. The problem is not the size of the rate. It is the size of the population underneath it: a tract with a dozen white residents produces an unusable estimate whether the rate comes out at 2% or 100%.\n\n\nView Code\npov_2010 %&gt;%\n   filter(!is.na(wht_pct), wht_pct &gt; 0) %&gt;%\n  arrange(desc(wht_pct)) %&gt;%\n  slice_head(n = 15) %&gt;%\n  mutate(\n    dot = case_when(\n      wht_cv &lt; 12 ~ \"🟢\",\n      wht_cv &lt;= 40 ~ \"🟡\",\n      TRUE ~ \"🔴\"\n    ),\n    NAME = str_remove(NAME, \", Philadelphia County, Pennsylvania\")\n  ) %&gt;%\n  select(dot, NAME, wht_pct, wht_moe, wht_cv, wht_reliability) %&gt;%\n  gt() %&gt;%\n  fmt_number(columns = c(wht_pct, wht_moe, wht_cv), decimals = 1) %&gt;%\n  cols_label(\n    dot = \"\",\n    NAME = \"Tract\",\n    wht_pct = \"Rate (%)\",\n    wht_moe = \"MOE\",\n    wht_cv = \"CV (%)\",\n    wht_reliability = \"Reliability\"\n  ) %&gt;%\n  cols_align(align = \"center\", columns = dot) %&gt;%\n  tab_header(\n    title = \"Even the highest white poverty rates are mostly unreliable\",\n    subtitle = \"Fifteen tracts with the highest white poverty rates, 2006-2010 ACS\"\n  ) %&gt;%\n  tab_source_note(\n    \"Reliability thresholds follow Jurjevich et al. (2018): CV &lt; 12% reliable, 12-40% somewhat reliable, &gt; 40% unreliable.\"\n  )\n\n\n\n\n\n\n\n\nEven the highest white poverty rates are mostly unreliable\n\n\nFifteen tracts with the highest white poverty rates, 2006-2010 ACS\n\n\n\nTract\nRate (%)\nMOE\nCV (%)\nReliability\n\n\n\n\n🔴\nCensus Tract 83.01\n100.0\n214.2\n130.2\nUnreliable\n\n\n🔴\nCensus Tract 103\n100.0\n217.6\n132.3\nUnreliable\n\n\n🔴\nCensus Tract 106\n100.0\n235.7\n143.3\nUnreliable\n\n\n🔴\nCensus Tract 151.02\n100.0\n178.1\n108.3\nUnreliable\n\n\n🔴\nCensus Tract 152\n100.0\n117.3\n71.3\nUnreliable\n\n\n🔴\nCensus Tract 167.02\n100.0\n189.6\n115.3\nUnreliable\n\n\n🔴\nCensus Tract 174\n100.0\n218.6\n132.9\nUnreliable\n\n\n🔴\nCensus Tract 31\n100.0\n181.2\n110.1\nUnreliable\n\n\n🟢\nCensus Tract 88.01\n95.0\n17.3\n11.1\nReliable\n\n\n🔴\nCensus Tract 279.02\n92.3\n119.7\n78.9\nUnreliable\n\n\n🟡\nCensus Tract 203\n88.6\n18.6\n12.8\nSomewhat reliable\n\n\n🟡\nCensus Tract 364\n87.2\n19.8\n13.8\nSomewhat reliable\n\n\n🟢\nCensus Tract 147\n85.8\n5.9\n4.2\nReliable\n\n\n🔴\nCensus Tract 145\n85.4\n85.9\n61.1\nUnreliable\n\n\n🟡\nCensus Tract 88.02\n85.0\n18.1\n13.0\nSomewhat reliable\n\n\n\nReliability thresholds follow Jurjevich et al. (2018): CV &lt; 12% reliable, 12-40% somewhat reliable, &gt; 40% unreliable.\n\n\n\n\n\n\n\n\nAcross the city the pattern holds. Of Philadelphia’s 384 tracts in 2006-2010, just 6 produce a white poverty rate that meets the standard threshold for reliability: 1.6% of the city. Another 189 tracts, 49.2%, are unreliable outright, and 10 more yield no rate at all. The article builds several of its sharpest claims on a measure that works in six tracts out of 384.\n\n\nWhy the estimates fail\n\n\nView Code\npov_2010 %&gt;%\n  filter(!is.na(wht_cv), !is.infinite(wht_cv), wht_cv &lt; 200) %&gt;%\n  ggplot(aes(x = wht_totalE, y = wht_cv)) +\n  geom_point(alpha = 0.35, size = 1.2, color = \"#1f5c8b\") +\n  geom_hline(yintercept = 40, linetype = \"dashed\", linewidth = 0.3)+\n  annotate(\"text\", x = 5500, y = 45, label = \"Unreliable above this line\",\n           size = 2.8, color = \"grey40\", hjust = 0.5) +\n  theme_minimal() +\n  theme(\n    plot.title = element_text(size = 12, face = \"bold\"),\n    plot.subtitle = element_text(size = 10, color = \"grey30\"),\n    axis.title = element_text(size = 9, color = \"grey30\"),\n    axis.text = element_text(size = 8),\n    panel.grid = element_blank(),\n    axis.line = element_line(linewidth = 0.2, color = \"grey70\")\n  ) +\n  labs(\n    title = \"Reliability depends on how many white residents a tract has\",\n    subtitle = \"Each dot is one Philadelphia tract, 2006-2010 ACS\",\n    x = \"White population for whom poverty status is determined\",\n    y = \"Coefficient of variation(%)\"\n  )\n\n\n\n\n\n\n\n\n\nOf the 370 tracts with a measurable white poverty rate in both periods, 72 show a change that is statistically detectable and 298 do not.\n\n\nThe citywide rate\n\n\nView Code\ncity_2017 &lt;- pov_2017 %&gt;%\n  st_drop_geometry() %&gt;%\n  summarise(\n    poor_total = sum(pov_poorE, na.rm = TRUE),\n    poor_moe = moe_sum(pov_poorM, pov_poorE, na.rm = TRUE),\n    univ_total = sum(pov_totalE, na.rm = TRUE),\n    univ_moe = moe_sum(pov_totalM, pov_totalE, na.rm = TRUE)\n  ) %&gt;%\n  mutate(\n    city_rate = poor_total / univ_total * 100,\n    city_moe = moe_prop(poor_total, univ_total, poor_moe, univ_moe) * 100\n  )\n\ncity_2017\n\n\n  poor_total poor_moe univ_total univ_moe city_rate  city_moe\n1     393924  8321.62    1526582 10140.92  25.80431 0.5174618"
-  },
-  {
-    "objectID": "assignments/Kasat_Assignment_3.html#part-3-adjudicate",
-    "href": "assignments/Kasat_Assignment_3.html#part-3-adjudicate",
-    "title": "Verify the Claim: Philadelphia Poverty Change",
-    "section": "Part 3 : Adjudicate",
-    "text": "Part 3 : Adjudicate\nSupported: The citywide poverty rate of 26% holds: aggregating all 384 tracts gives 25.8%, margin of error half a percentage point. This is the article’s largest-scale claim and its most secure one, because summing 384 tracts shrinks the relative error to a fraction of what it is in any single tract. The article is also right not to compare overlapping periods.\nNot supported: The citywide white poverty figure (14.8% to 19.4%) comes from a one-year survey dropped into a story otherwise built on five-year estimates; Census guidance says not to compare the two. The framing fails too. Of 376 tracts, 36 show a detectable increase, 27 show a detectable decline the article never mentions, and 313 show no change distinguishable from zero. That is not a city sliding into poverty. It is a city where most places held steady and the rest moved both ways.\nCannot be determined: Philadelphia neighborhoods are not Census geographies, and the reporters never published which tracts they aggregated into which neighborhood. Fairhill’s 61%, Eastwick’s 12% to 26%, Holmesburg’s 2% to 19%, Mayfair’s 1% to 14%, and the 22-neighborhood claim are therefore uncheckable. The white poverty claims fail twice over: only 6 of 384 tracts produce a reliable white poverty rate, and 189 are unreliable outright. A 1% or 2% rate in a tract with few white residents is not a precise measurement of a small number. It is an imprecise measurement that lands on one."
-  },
-  {
-    "objectID": "assignments/Kasat_Assignment_3.html#part-4-rewrite",
-    "href": "assignments/Kasat_Assignment_3.html#part-4-rewrite",
-    "title": "Verify the Claim: Philadelphia Poverty Change",
-    "section": "Part 4: Rewrite",
-    "text": "Part 4: Rewrite\nRewriting the article’s opening paragraph:\n\nA new five-year federal survey puts Philadelphia’s poverty rate at about 26%, a figure the data supports with precision. What it does not support is a story of a city uniformly sliding into poverty. The Census divides Philadelphia into roughly 380 small statistical areas. Between the 2006-2010 and 2013-2017 surveys, fewer than 10% of them show a poverty increase large enough to be told apart from survey error. About 7% show a decrease. The remaining 83% moved too little, or were measured too imprecisely, to say either way. The survey is weakest where the headlines are loudest: in half the city it cannot measure white poverty reliably at all, because too few white residents live there to sample well. Philadelphia’s poverty is real and citywide. Whether it is rising or falling block by block is mostly beyond what this data can show."
-  },
-  {
-    "objectID": "assignments/Kasat_Assignment_3.html#part-4-rewrite-1",
-    "href": "assignments/Kasat_Assignment_3.html#part-4-rewrite-1",
-    "title": "Verify the Claim: Philadelphia Poverty Change",
-    "section": "Part 4: Rewrite",
-    "text": "Part 4: Rewrite\nRewriting the article’s opening paragraph:\n\nA new five-year federal survey puts Philadelphia’s poverty rate at about 26%, a figure the data supports with precision. What it does not support is a story of a city uniformly sliding into poverty. The Census divides Philadelphia into roughly 380 small statistical areas. Between the 2006-2010 and 2013-2017 surveys, fewer than 10% of them show a poverty increase large enough to be told apart from survey error. About 7% show a decrease. The remaining 83% moved too little, or were measured too imprecisely, to say either way. The survey is weakest where the headlines are loudest: in half the city it cannot measure white poverty reliably at all, because too few white residents live there to sample well. Philadelphia’s poverty is real and citywide. Whether it is rising or falling block by block is mostly beyond what this data can show."
+    "text": "Completed assignments for MUSA 5080. New assignments appear here automatically once you add the .qmd file to this folder and render.\n\n\n\n\n\n\n\n\n\n\n\nAssignment 4: Building Features, Watching What Happens\n\n\n\n\n\n\n\n\nOct 16, 2026\n\n\n\n\n\n\n\nAssignment 3: Verify the Claim - Philadelphia Poverty Change\n\n\n\n\n\n\n\n\nSep 25, 2026\n\n\n\n\n\n\n\nAssignment 2: Who Do We Know the Least About?\n\n\n\n\n\n\n\n\nSep 11, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "assignments/Kasat_assignment4.html",
@@ -369,5 +138,215 @@
     "title": "Assignment 4: Building Features, Watching What Happens",
     "section": "Part 7: Reflection (about 300 words)",
     "text": "Part 7: Reflection (about 300 words)\nAnswer in prose, drawing on your model log (incorporate our words of the day for bonus points. just kidding):\n\nWhat helped, and what didn’t? Name the feature that lowered CV RMSE the most and the one that disappointed you most. Offer a reason for each.\nRead one coefficient twice. Choose a variable in your final model. Give its β̂ reading and its ŷ reading in one sentence each.\nWhat’s still missing? Look at your final residual map. Name one thing about those places you’d want to measure next, and where you might get the data.\nHow much of the remaining error might be uncertainty or statistical noise? Use your last plot.\n\nYour answer: Distance to City Hall helped the most. Once I let it curve (distance plus distance squared), CV RMSE dropped from 5.15 to 5.02. The scatterplot made sense of it: commutes get longer as you move away from the center, peak around 8 to 9 miles out, then ease off. A straight line can’t do that.\nJob density was the big letdown. I expected it to matter, but it actually made predictions worse (5.20), and logging it only got me back to 5.12. I think that’s because jobs show where people work, while my outcome is how long residents take to get there. It also moves a lot with population density, so it didn’t add much new.\nFor one coefficient, take the share of adults with a bachelor’s degree. Holding everything else constant, each extra percentage point of college graduates goes with a commute about 0.05 minutes shorter. Two similar tracts that are 10 points apart in college share are predicted to differ by about 0.47 minutes, or about 28 seconds, with the more educated tract having the shorter commute.\nMy final residual map still has a few stubborn spots: one dark red tract in the north-center, and some dark blue ones in the center-right and south. I’d want to know how good the bus service and highway access are there. SEPTA’s schedule data (GTFS, from 2023 or earlier) could show bus frequency, and OpenStreetMap or Census road files could show highway access.\nAs for noise, the fog plot shows that tracts with shakier commute estimates tend to be missed by more, around 3 minutes at the low end and 9 at the high end. But plenty of reliable tracts are still missed by a lot, so uncertainty explains part of the error, not most of it."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "Master student of Urban Spatial Analytics (MUSA) at the Weitzman School of Design, University of Pennsylvania, taking my practice deeper into the data behind the design.\nTrained as both an architect and urbanist, I transform climate science into adaptive urban strategies that treat environmental change not as a threat, but as a catalyst for resilience. I design with water flow, seasonal flooding, and ecological shift, not against them.\nMy work spans projected climate scenarios, participatory planning, and interventions like floodable landscapes and climate-adaptive urban foodscapes. Always at the intersection of environmental data, policy, and design, and always in pursuit of strategies that are equitable, not just forward-thinking."
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About Me",
+    "section": "",
+    "text": "Master student of Urban Spatial Analytics (MUSA) at the Weitzman School of Design, University of Pennsylvania, taking my practice deeper into the data behind the design.\nTrained as both an architect and urbanist, I transform climate science into adaptive urban strategies that treat environmental change not as a threat, but as a catalyst for resilience. I design with water flow, seasonal flooding, and ecological shift, not against them.\nMy work spans projected climate scenarios, participatory planning, and interventions like floodable landscapes and climate-adaptive urban foodscapes. Always at the intersection of environmental data, policy, and design, and always in pursuit of strategies that are equitable, not just forward-thinking."
+  },
+  {
+    "objectID": "about.html#skills",
+    "href": "about.html#skills",
+    "title": "About Me",
+    "section": "Skills",
+    "text": "Skills\n\n\nLanguages & Tools: R, Quarto, Git, Phython\nSpatial: (add as you learn)\nData: US Census / ACS via tidycensus"
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About Me",
+    "section": "Contact",
+    "text": "Contact\n\n\nEmail: gautamik@upenn.edu\nGitHub: @gautamik01"
+  },
+  {
+    "objectID": "assignments/Kasat_Assignment_3.html",
+    "href": "assignments/Kasat_Assignment_3.html",
+    "title": "Assignment 3: Verify the Claim - Philadelphia Poverty Change",
+    "section": "",
+    "text": "This report tests whether the ACS data supports the claims in Alfred Lubrano’s 2018 article, “New Census figures on Philly neighborhoods show inequality, high numbers of whites living in poverty” (WHYY / Philadelphia Inquirer, December 6, 2018)."
+  },
+  {
+    "objectID": "assignments/Kasat_Assignment_3.html#the-enquiry",
+    "href": "assignments/Kasat_Assignment_3.html#the-enquiry",
+    "title": "Assignment 3: Verify the Claim - Philadelphia Poverty Change",
+    "section": "",
+    "text": "This report tests whether the ACS data supports the claims in Alfred Lubrano’s 2018 article, “New Census figures on Philly neighborhoods show inequality, high numbers of whites living in poverty” (WHYY / Philadelphia Inquirer, December 6, 2018)."
+  },
+  {
+    "objectID": "assignments/Kasat_Assignment_3.html#part-1-reconstruct",
+    "href": "assignments/Kasat_Assignment_3.html#part-1-reconstruct",
+    "title": "Assignment 3: Verify the Claim - Philadelphia Poverty Change",
+    "section": "Part 1: Reconstruct",
+    "text": "Part 1: Reconstruct\n\nVariables\nI pulled four ACS variables. For overall poverty, B17001_002 counts people below the poverty level in the past twelve months, and B17001_001 gives the population for whom poverty status is determined. Because several claims are specifically about white poverty, I also pulled B17001A_001 and B17001A_002, the same table restricted to people identifying as white alone. ACS publishes counts, not rates, so both the rate and its margin of error have to be calculated. I used the 2006-2010 and 2013-2017 five-year estimates at the census tract level. Five-year estimates are the only ones that reach tracts; one-year estimates cover only areas of 65,000 people or more.\n\n\nAssumptions\nThe article does not document its method, so several choices are mine. It does not name the ACS table it used; I assumed B17001. It says “white” without defining it, so I used B17001A, white alone, which includes people who also identify as Hispanic. And it reports neighborhood figures, which are not Census geographies: its reporters aggregated tracts into boundaries of their own choosing and never published which tracts went where, so my numbers will not match theirs. Every figure in the article is a point estimate, with no margins of error given.\n\n\nOverlap\nThe two periods do not overlap. Census Bureau guidance is explicit that only non-overlapping five-year estimates should be compared over time, so on this point the article is on solid ground."
+  },
+  {
+    "objectID": "assignments/Kasat_Assignment_3.html#part-2-test-code-plus-interpretation",
+    "href": "assignments/Kasat_Assignment_3.html#part-2-test-code-plus-interpretation",
+    "title": "Assignment 3: Verify the Claim - Philadelphia Poverty Change",
+    "section": "Part 2: Test (code plus interpretation)",
+    "text": "Part 2: Test (code plus interpretation)\n\nComputing poverty rates\nACS publishes counts, not rates, so both the rate and its uncertainty have to be built. Dividing the count below poverty by the universe gives the rate; moe_prop() then combines the two margins of error into a margin of error for the resulting proportion. The count’s margin of error does not carry over.\n\n\nView Code\npov_2010 &lt;- pov_2010 %&gt;%\n  mutate(\n    pov_pct = pov_poorE / pov_totalE * 100,\n    pov_moe = moe_prop(pov_poorE, pov_totalE, pov_poorM, pov_totalM) * 100,\n    wht_pct = wht_poorE / wht_totalE * 100,\n    wht_moe = moe_prop(wht_poorE, wht_totalE, wht_poorM, wht_totalM) * 100\n    )\n\n\n\n\nView Code\npov_2017 &lt;- pov_2017 %&gt;%\n  mutate(\n    pov_pct = pov_poorE / pov_totalE * 100,\n    pov_moe = moe_prop(pov_poorE, pov_totalE, pov_poorM, pov_totalM) * 100,\n    wht_pct = wht_poorE / wht_totalE * 100,\n    wht_moe = moe_prop(wht_poorE, wht_totalE, wht_poorM, wht_totalM) * 100\n    )\n\n\n\n\nAssessing reliability\nThe coefficient of variation (CV) expresses the uncertainty as a share of the estimate, which makes estimates comparable. Following Jurjevich et al. (2018), I flagged a CV under 12% as reliable, 12 to 40% as somewhat reliable, and above 40% as unreliable.\n\n\nView Code\npov_2010 &lt;- pov_2010 %&gt;%\n  mutate(\n    pov_cv = (pov_moe/1.645) / pov_pct * 100,\n    pov_reliability = case_when(\n    pov_cv &lt; 12 ~ \"Reliable\",\n    pov_cv &lt; 40 ~ \"Somewhat reliable\",\n    pov_cv &gt;= 40 ~ \"Unreliable\",\n    TRUE ~ NA_character_\n    )\n  )\n\n\n\n\nView Code\npov_2010 &lt;- pov_2010 %&gt;%\n  mutate(\n    wht_cv = (wht_moe/1.645) / wht_pct * 100,\n    wht_reliability = case_when(\n    wht_cv &lt; 12 ~ \"Reliable\",\n    wht_cv &lt; 40 ~ \"Somewhat reliable\",\n    wht_cv &gt;= 40 ~ \"Unreliable\",\n    TRUE ~ NA_character_\n    )\n  )\n\n\n\n\nView Code\npov_2017 &lt;- pov_2017 %&gt;%\n  mutate(\n    pov_cv = (pov_moe/1.645) / pov_pct * 100,\n    pov_reliability = case_when(\n    pov_cv &lt; 12 ~ \"Reliable\",\n    pov_cv &lt; 40 ~ \"Somewhat reliable\",\n    pov_cv &gt;= 40 ~ \"Unreliable\",\n    TRUE ~ NA_character_\n    )\n  )\n\n\n\n\nView Code\npov_2017 &lt;- pov_2017 %&gt;%\n  mutate(\n    wht_cv = (wht_moe/1.645) / wht_pct * 100,\n    wht_reliability = case_when(\n    wht_cv &lt; 12 ~ \"Reliable\",\n    wht_cv &lt; 40 ~ \"Somewhat reliable\",\n    wht_cv &gt;= 40 ~ \"Unreliable\",\n    TRUE ~ NA_character_\n    )\n  )\n\n\n\n\nObservations\nReliability differs sharply between the two measures, and between the two periods. For overall poverty, 45 of 384 tracts were unreliable in 2006-2010, falling to 22 by 2013-2017. For white poverty the picture is far worse: 189 tracts, just under half the city, were unreliable in 2006-2010, improving to 111 by 2013-2017. This asymmetry matters because the article’s white poverty claims are claims about change, and a change is only as sound as its weaker endpoint. In roughly half of Philadelphia, that endpoint will not hold.\n\n\nMeasuring change\nTo compare the two periods, each tract’s 2010 and 2017 rates have to sit in the same row, so I joined the two datasets on GEOID. The change itself is simple subtraction, but its uncertainty is not: a difference between two estimates is less certain than either estimate alone, and the two margins of error combine by squaring, adding, and taking the square root rather than by simple addition. Dividing the change by that combined standard error gives a z score, which says how large the movement is relative to the noise around it. At 90% confidence the threshold is 1.645: above it, the change is distinguishable from zero; below it, the data cannot establish that anything happened.\n\n\nView Code\npov_change &lt;- pov_2010 %&gt;%\n  st_drop_geometry() %&gt;%\n  select(GEOID, NAME, pov_pct, pov_moe, wht_pct, wht_moe) %&gt;%\n  rename(pov_pct_10 = pov_pct, pov_moe_10 = pov_moe,\n         wht_pct_10 = wht_pct, wht_moe_10 = wht_moe) %&gt;%\n  left_join(\n    pov_2017 %&gt;%\n      select(GEOID, pov_pct, pov_moe, wht_pct, wht_moe) %&gt;%\n      rename(pov_pct_17 = pov_pct, pov_moe_17 = pov_moe,\n             wht_pct_17 = wht_pct, wht_moe_17 = wht_moe),\n    by = \"GEOID\"\n  )\n\n\n\n\nView Code\npov_change &lt;- pov_change %&gt;%\n  mutate(\n    pov_change = pov_pct_17 - pov_pct_10,\n    pov_se_diff = sqrt((pov_moe_10/ 1.645)^2 + (pov_moe_17/ 1.645)^2),\n    pov_moe_diff = pov_se_diff * 1.645,\n    pov_z = pov_change / pov_se_diff,\n    pov_sig = abs(pov_z) &gt; 1.645\n    )\n\n\n\n\nView Code\npov_change &lt;- pov_change %&gt;%\n  mutate(\n    wht_change = wht_pct_17 - wht_pct_10,\n    wht_se_diff = sqrt((wht_moe_10/ 1.645)^2 + (wht_moe_17/ 1.645)^2),\n    wht_moe_diff = wht_se_diff * 1.645,\n    wht_z = wht_change / wht_se_diff,\n    wht_sig = abs(wht_z) &gt; 1.645\n    )\n\n\n\n\nMissing values\nEight tracts produce no poverty rate in one or both periods. Seven of them carry numbers in the 9803 to 9809 range, which the Census Bureau reserves for special land use tracts: large areas with little or no residential population, such as parks, airports, and industrial or employment zones.\nThe eighth, Tract 50, sits at the southern tip of the city along the Delaware and behaves the same way. In all eight, the population for whom poverty status can be determined is effectively zero, so there is no rate to compute and the NA is correct rather than a gap in the data. I excluded them from the tract counts that follow.\nSix further tracts drop out of the white poverty analysis for a different reason. Each has a measurable white poverty rate in one period but not the other, because the white population for whom poverty status could be determined was zero in the other period. Tract 103 is the clearest case: a white poverty rate of 100% in 2006-2010 and no measurable white population at all by 2013-2017. With no second endpoint there is no change to test, so these tracts are excluded from the white analysis but retained in the overall one.\n\n\nView Code\ncount(pov_change, pov_sig)\n\n\n# A tibble: 2 × 2\n  pov_sig     n\n  &lt;lgl&gt;   &lt;int&gt;\n1 FALSE     313\n2 TRUE       63\n\n\n\n\nHow many tracts changed\nOf the 376 tracts with a measurable poverty rate in both periods, 63 show a change that is statistically distinguishable from zero at 90% confidence. The remaining 313, just over 83%, do not. That does not mean poverty held steady in those tracts; it means the data cannot establish that it moved. For most of Philadelphia, the margin of error on a seven-year change is wider than the change itself.\n\n\nView Code\npov_change  %&gt;%\n  arrange(pov_change) %&gt;%\n  mutate(rank = row_number()) %&gt;%\n  ggplot(aes(x = rank, y = pov_change)) +\n  geom_errorbar(aes(ymin = pov_change - pov_moe_diff,\n                    ymax = pov_change + pov_moe_diff,\n                    color = pov_sig),\n                    width = 0, alpha = 0.4)+\n  geom_point(aes(color = pov_sig), size = 0.5)+\n  scale_color_manual(\n    values = c(\"TRUE\" = \"#1f5c8b\", \"FALSE\" = \"grey75\"),\n    labels = c(\"TRUE\" = \"Detectable\", \"FALSE\" = \"Not detectable\"),\n    name = NULL\n  ) +\n  geom_hline(yintercept = 0, linetype = \"dashed\", linewidth = 0.3) +\n  scale_x_continuous(breaks = seq(0, 376, by = 50)) +\n  coord_cartesian(ylim = c(-60, 60)) +\n  theme_minimal() +\n  theme(\n    plot.title = element_text(size = 12, face = \"bold\"),\n    plot.subtitle = element_text(size = 10, color = \"grey30\"),\n    plot.caption = element_text(size = 7, color = \"grey50\", hjust = 0),\n    axis.title = element_text(size = 9, color = \"grey30\"),\n    axis.text = element_text(size = 8),\n    legend.text = element_text(size = 8),\n    legend.position = \"bottom\",\n    panel.grid = element_blank()\n  ) +\n  labs(\n    title = \"Most Philadelphia tracts show no detectable change in poverty\",\n    subtitle = \"Poverty rate change between the 2006-2010 and 2013-2017 ACS estimates\",\n    caption = str_wrap(\"Axis limited to ±60 points for readability; a small number of tracts have margins of error exceeding the possible range of the scale.\", 100),\n     x = \"Each tract, ordered from largest decline to largest increase\", \n    y = \"Change in poverty rate (% points)\"\n  )\n\n\n\n\n\n\n\n\n\nThe article’s most striking white poverty figures are its lowest ones: 2% in Holmesburg, 1% in Mayfair. The table below shows the fifteen Philadelphia tracts with the lowest white poverty rates in 2006-2010, the period those claims start from. Every one of them carries a coefficient of variation above the reliability threshold, several by an order of magnitude. A rate of 1% or 2% in a tract with few white residents is not a precise measurement of a small number; it is an imprecise measurement that happens to land on a small number."
+  },
+  {
+    "objectID": "assignments/Kasat_Assignment_3.html#where-the-articles-smallest-numbers-come-from",
+    "href": "assignments/Kasat_Assignment_3.html#where-the-articles-smallest-numbers-come-from",
+    "title": "Assignment 3: Verify the Claim - Philadelphia Poverty Change",
+    "section": "Where the article’s smallest numbers come from",
+    "text": "Where the article’s smallest numbers come from\nThe article’s most striking white poverty figures are its smallest: 2% in Holmesburg, 1% in Mayfair. The first table below shows the fifteen tracts with the lowest white poverty rates in 2006-2010, the period those claims start from. Thirteen of the fifteen are unreliable.\n\n\nView Code\npov_2010 %&gt;%\n   filter(!is.na(wht_pct), wht_pct &gt; 0, wht_pct &lt; 10) %&gt;%\n  arrange(wht_pct) %&gt;%\n  slice_head(n = 15) %&gt;%\n  mutate(\n    dot = case_when(\n      wht_cv &lt; 12 ~ \"🟢\",\n      wht_cv &lt;= 40 ~ \"🟡\",\n      TRUE ~ \"🔴\"\n    ),\n    NAME = str_remove(NAME, \", Philadelphia County, Pennsylvania\")\n  ) %&gt;%\n  select(dot, NAME, wht_pct, wht_moe, wht_cv, wht_reliability) %&gt;%\n  gt() %&gt;%\n  fmt_number(columns = c(wht_pct, wht_moe, wht_cv), decimals = 1) %&gt;%\n  cols_label(\n    dot = \"\",\n    NAME = \"Tract\",\n    wht_pct = \"Rate (%)\",\n    wht_moe = \"MOE\",\n    wht_cv = \"CV (%)\",\n    wht_reliability = \"Reliability\"\n  ) %&gt;%\n  cols_align(align = \"center\", columns = dot) %&gt;%\n  tab_header(\n    title = \"The lowest white poverty rates are the least reliable\",\n    subtitle = \"Fifteen tracts with the lowest white poverty rates, 2006-2010 ACS\"\n  ) %&gt;%\n  tab_source_note(\n    \"Reliability thresholds follow Jurjevich et al. (2018): CV &lt; 12% reliable, 12-40% somewhat reliable, &gt; 40% unreliable.\"\n  )\n\n\n\n\n\n\n\n\nThe lowest white poverty rates are the least reliable\n\n\nFifteen tracts with the lowest white poverty rates, 2006-2010 ACS\n\n\n\nTract\nRate (%)\nMOE\nCV (%)\nReliability\n\n\n\n\n🔴\nCensus Tract 236\n0.9\n1.4\n97.7\nUnreliable\n\n\n🔴\nCensus Tract 384\n1.2\n1.1\n53.9\nUnreliable\n\n\n🔴\nCensus Tract 220\n1.6\n2.6\n95.9\nUnreliable\n\n\n🔴\nCensus Tract 267\n2.0\n2.9\n90.0\nUnreliable\n\n\n🔴\nCensus Tract 305.02\n2.3\n2.1\n57.3\nUnreliable\n\n\n🟡\nCensus Tract 351\n2.3\n1.4\n36.0\nSomewhat reliable\n\n\n🔴\nCensus Tract 10.01\n2.3\n2.7\n70.3\nUnreliable\n\n\n🔴\nCensus Tract 339\n2.4\n2.9\n75.7\nUnreliable\n\n\n🔴\nCensus Tract 365.02\n2.4\n2.0\n51.3\nUnreliable\n\n\n🟡\nCensus Tract 352\n2.7\n1.6\n37.2\nSomewhat reliable\n\n\n🔴\nCensus Tract 136.01\n2.8\n2.4\n51.2\nUnreliable\n\n\n🔴\nCensus Tract 308\n2.9\n1.9\n40.2\nUnreliable\n\n\n🔴\nCensus Tract 255\n3.4\n3.8\n66.4\nUnreliable\n\n\n🔴\nCensus Tract 61\n3.5\n4.5\n78.5\nUnreliable\n\n\n🔴\nCensus Tract 270\n3.5\n3.7\n65.0\nUnreliable\n\n\n\nReliability thresholds follow Jurjevich et al. (2018): CV &lt; 12% reliable, 12-40% somewhat reliable, &gt; 40% unreliable.\n\n\n\n\n\n\n\n\n\nThe same problem at the other end of the scale\nThe second table shows the opposite end of the range, and the picture barely improves. Only two of the fifteen highest rates are reliable, and eight report a rate of exactly 100% with margins of error between 117 and 236 percentage points, on a scale that can only run from 0 to 100. The problem is not the size of the rate. It is the size of the population underneath it: a tract with a dozen white residents produces an unusable estimate whether the rate comes out at 2% or 100%.\n\n\nView Code\npov_2010 %&gt;%\n   filter(!is.na(wht_pct), wht_pct &gt; 0) %&gt;%\n  arrange(desc(wht_pct)) %&gt;%\n  slice_head(n = 15) %&gt;%\n  mutate(\n    dot = case_when(\n      wht_cv &lt; 12 ~ \"🟢\",\n      wht_cv &lt;= 40 ~ \"🟡\",\n      TRUE ~ \"🔴\"\n    ),\n    NAME = str_remove(NAME, \", Philadelphia County, Pennsylvania\")\n  ) %&gt;%\n  select(dot, NAME, wht_pct, wht_moe, wht_cv, wht_reliability) %&gt;%\n  gt() %&gt;%\n  fmt_number(columns = c(wht_pct, wht_moe, wht_cv), decimals = 1) %&gt;%\n  cols_label(\n    dot = \"\",\n    NAME = \"Tract\",\n    wht_pct = \"Rate (%)\",\n    wht_moe = \"MOE\",\n    wht_cv = \"CV (%)\",\n    wht_reliability = \"Reliability\"\n  ) %&gt;%\n  cols_align(align = \"center\", columns = dot) %&gt;%\n  tab_header(\n    title = \"Even the highest white poverty rates are mostly unreliable\",\n    subtitle = \"Fifteen tracts with the highest white poverty rates, 2006-2010 ACS\"\n  ) %&gt;%\n  tab_source_note(\n    \"Reliability thresholds follow Jurjevich et al. (2018): CV &lt; 12% reliable, 12-40% somewhat reliable, &gt; 40% unreliable.\"\n  )\n\n\n\n\n\n\n\n\nEven the highest white poverty rates are mostly unreliable\n\n\nFifteen tracts with the highest white poverty rates, 2006-2010 ACS\n\n\n\nTract\nRate (%)\nMOE\nCV (%)\nReliability\n\n\n\n\n🔴\nCensus Tract 83.01\n100.0\n214.2\n130.2\nUnreliable\n\n\n🔴\nCensus Tract 103\n100.0\n217.6\n132.3\nUnreliable\n\n\n🔴\nCensus Tract 106\n100.0\n235.7\n143.3\nUnreliable\n\n\n🔴\nCensus Tract 151.02\n100.0\n178.1\n108.3\nUnreliable\n\n\n🔴\nCensus Tract 152\n100.0\n117.3\n71.3\nUnreliable\n\n\n🔴\nCensus Tract 167.02\n100.0\n189.6\n115.3\nUnreliable\n\n\n🔴\nCensus Tract 174\n100.0\n218.6\n132.9\nUnreliable\n\n\n🔴\nCensus Tract 31\n100.0\n181.2\n110.1\nUnreliable\n\n\n🟢\nCensus Tract 88.01\n95.0\n17.3\n11.1\nReliable\n\n\n🔴\nCensus Tract 279.02\n92.3\n119.7\n78.9\nUnreliable\n\n\n🟡\nCensus Tract 203\n88.6\n18.6\n12.8\nSomewhat reliable\n\n\n🟡\nCensus Tract 364\n87.2\n19.8\n13.8\nSomewhat reliable\n\n\n🟢\nCensus Tract 147\n85.8\n5.9\n4.2\nReliable\n\n\n🔴\nCensus Tract 145\n85.4\n85.9\n61.1\nUnreliable\n\n\n🟡\nCensus Tract 88.02\n85.0\n18.1\n13.0\nSomewhat reliable\n\n\n\nReliability thresholds follow Jurjevich et al. (2018): CV &lt; 12% reliable, 12-40% somewhat reliable, &gt; 40% unreliable.\n\n\n\n\n\n\n\n\nAcross the city the pattern holds. Of Philadelphia’s 384 tracts in 2006-2010, just 6 produce a white poverty rate that meets the standard threshold for reliability: 1.6% of the city. Another 189 tracts, 49.2%, are unreliable outright, and 10 more yield no rate at all. The article builds several of its sharpest claims on a measure that works in six tracts out of 384.\n\n\nWhy the estimates fail\n\n\nView Code\npov_2010 %&gt;%\n  filter(!is.na(wht_cv), !is.infinite(wht_cv), wht_cv &lt; 200) %&gt;%\n  ggplot(aes(x = wht_totalE, y = wht_cv)) +\n  geom_point(alpha = 0.35, size = 1.2, color = \"#1f5c8b\") +\n  geom_hline(yintercept = 40, linetype = \"dashed\", linewidth = 0.3)+\n  annotate(\"text\", x = 5500, y = 45, label = \"Unreliable above this line\",\n           size = 2.8, color = \"grey40\", hjust = 0.5) +\n  theme_minimal() +\n  theme(\n    plot.title = element_text(size = 12, face = \"bold\"),\n    plot.subtitle = element_text(size = 10, color = \"grey30\"),\n    axis.title = element_text(size = 9, color = \"grey30\"),\n    axis.text = element_text(size = 8),\n    panel.grid = element_blank(),\n    axis.line = element_line(linewidth = 0.2, color = \"grey70\")\n  ) +\n  labs(\n    title = \"Reliability depends on how many white residents a tract has\",\n    subtitle = \"Each dot is one Philadelphia tract, 2006-2010 ACS\",\n    x = \"White population for whom poverty status is determined\",\n    y = \"Coefficient of variation(%)\"\n  )\n\n\n\n\n\n\n\n\n\nOf the 370 tracts with a measurable white poverty rate in both periods, 72 show a change that is statistically detectable and 298 do not.\n\n\nThe citywide rate\n\n\nView Code\ncity_2017 &lt;- pov_2017 %&gt;%\n  st_drop_geometry() %&gt;%\n  summarise(\n    poor_total = sum(pov_poorE, na.rm = TRUE),\n    poor_moe = moe_sum(pov_poorM, pov_poorE, na.rm = TRUE),\n    univ_total = sum(pov_totalE, na.rm = TRUE),\n    univ_moe = moe_sum(pov_totalM, pov_totalE, na.rm = TRUE)\n  ) %&gt;%\n  mutate(\n    city_rate = poor_total / univ_total * 100,\n    city_moe = moe_prop(poor_total, univ_total, poor_moe, univ_moe) * 100\n  )\n\ncity_2017\n\n\n  poor_total poor_moe univ_total univ_moe city_rate  city_moe\n1     393924  8321.62    1526582 10140.92  25.80431 0.5174618"
+  },
+  {
+    "objectID": "assignments/Kasat_Assignment_3.html#part-3-adjudicate",
+    "href": "assignments/Kasat_Assignment_3.html#part-3-adjudicate",
+    "title": "Assignment 3: Verify the Claim - Philadelphia Poverty Change",
+    "section": "Part 3 : Adjudicate",
+    "text": "Part 3 : Adjudicate\nSupported: The citywide poverty rate of 26% holds: aggregating all 384 tracts gives 25.8%, margin of error half a percentage point. This is the article’s largest-scale claim and its most secure one, because summing 384 tracts shrinks the relative error to a fraction of what it is in any single tract. The article is also right not to compare overlapping periods.\nNot supported: The citywide white poverty figure (14.8% to 19.4%) comes from a one-year survey dropped into a story otherwise built on five-year estimates; Census guidance says not to compare the two. The framing fails too. Of 376 tracts, 36 show a detectable increase, 27 show a detectable decline the article never mentions, and 313 show no change distinguishable from zero. That is not a city sliding into poverty. It is a city where most places held steady and the rest moved both ways.\nCannot be determined: Philadelphia neighborhoods are not Census geographies, and the reporters never published which tracts they aggregated into which neighborhood. Fairhill’s 61%, Eastwick’s 12% to 26%, Holmesburg’s 2% to 19%, Mayfair’s 1% to 14%, and the 22-neighborhood claim are therefore uncheckable. The white poverty claims fail twice over: only 6 of 384 tracts produce a reliable white poverty rate, and 189 are unreliable outright. A 1% or 2% rate in a tract with few white residents is not a precise measurement of a small number. It is an imprecise measurement that lands on one."
+  },
+  {
+    "objectID": "assignments/Kasat_Assignment_3.html#part-4-rewrite",
+    "href": "assignments/Kasat_Assignment_3.html#part-4-rewrite",
+    "title": "Assignment 3: Verify the Claim - Philadelphia Poverty Change",
+    "section": "Part 4: Rewrite",
+    "text": "Part 4: Rewrite\nRewriting the article’s opening paragraph:\n\nA new five-year federal survey puts Philadelphia’s poverty rate at about 26%, a figure the data supports with precision. What it does not support is a story of a city uniformly sliding into poverty. The Census divides Philadelphia into roughly 380 small statistical areas. Between the 2006-2010 and 2013-2017 surveys, fewer than 10% of them show a poverty increase large enough to be told apart from survey error. About 7% show a decrease. The remaining 83% moved too little, or were measured too imprecisely, to say either way. The survey is weakest where the headlines are loudest: in half the city it cannot measure white poverty reliably at all, because too few white residents live there to sample well. Philadelphia’s poverty is real and citywide. Whether it is rising or falling block by block is mostly beyond what this data can show."
+  },
+  {
+    "objectID": "assignments/assignment2.html",
+    "href": "assignments/assignment2.html",
+    "title": "Assignment 2: Who Do We Know the Least About?",
+    "section": "",
+    "text": "library(tidyverse)\nlibrary(tidycensus)"
+  },
+  {
+    "objectID": "assignments/assignment2.html#setup",
+    "href": "assignments/assignment2.html#setup",
+    "title": "Assignment 2: Who Do We Know the Least About?",
+    "section": "",
+    "text": "library(tidyverse)\nlibrary(tidycensus)"
+  },
+  {
+    "objectID": "assignments/assignment2.html#the-question",
+    "href": "assignments/assignment2.html#the-question",
+    "title": "Assignment 2: Who Do We Know the Least About?",
+    "section": "The question",
+    "text": "The question\nEvery number the American Community Survey publishes is an estimate drawn from a sample, not a count. That means every number comes with a margin of error — a statement about how wrong it might be.\nMost people ignore it. In this assignment, you won’t.\nIn this analysis, I look at median home value across counties in Maryland, and ask which communities we measure most and least reliably. As someone house-hunting in the Baltimore, I wanted to know how reliable home value estimates really are before treating them as fact. This matters beyond my own search as well since, shaky estimates affect property tax assessments and lending decisions too, so it’s useful for anyone relying on this data, not just buyers."
+  },
+  {
+    "objectID": "assignments/assignment2.html#choosing-what-to-measure",
+    "href": "assignments/assignment2.html#choosing-what-to-measure",
+    "title": "Assignment 2: Who Do We Know the Least About?",
+    "section": "Choosing what to measure",
+    "text": "Choosing what to measure\n\nmy_state &lt;- \"MD\"        # two-letter abbreviation, in quotes\nmy_variable &lt;- \"B25077_001\"     # the variable code, in quotes"
+  },
+  {
+    "objectID": "assignments/assignment2.html#pulling-the-data",
+    "href": "assignments/assignment2.html#pulling-the-data",
+    "title": "Assignment 2: Who Do We Know the Least About?",
+    "section": "Pulling the data",
+    "text": "Pulling the data\n\ncounty_data &lt;- get_acs(\n  geography = \"county\",\n  variables = my_variable,\n  state = my_state,\n  year = 2023,\n  survey = \"acs5\"\n)\n\nLet’s look at what came back.\n\ndim(county_data)\n\n[1] 24  5\n\nhead(county_data)\n\n# A tibble: 6 × 5\n  GEOID NAME                          variable   estimate   moe\n  &lt;chr&gt; &lt;chr&gt;                         &lt;chr&gt;         &lt;dbl&gt; &lt;dbl&gt;\n1 24001 Allegany County, Maryland     B25077_001   149200  5832\n2 24003 Anne Arundel County, Maryland B25077_001   450300  4485\n3 24005 Baltimore County, Maryland    B25077_001   330000  3148\n4 24009 Calvert County, Maryland      B25077_001   440200  8554\n5 24011 Caroline County, Maryland     B25077_001   272400  7506\n6 24013 Carroll County, Maryland      B25077_001   406400  7074\n\n\nI got 24 rows and it matches with the number of counties in the state. Since Maryland officially consists of 23 counties and 1 independent city (Baltimore City), which the Census Bureau treats as a “county equivalent”"
+  },
+  {
+    "objectID": "assignments/assignment2.html#how-big-is-the-margin-of-error",
+    "href": "assignments/assignment2.html#how-big-is-the-margin-of-error",
+    "title": "Assignment 2: Who Do We Know the Least About?",
+    "section": "How big is the margin of error?",
+    "text": "How big is the margin of error?\nA margin of error of 3,000 means something very different for an estimate of 20,000 than for an estimate of 200,000. To compare across places, we need it as a percentage.\n\ncounty_data &lt;- county_data %&gt;%\n  mutate(moe_pct = moe / estimate * 100)\n\nNow sort to see which counties are measured least reliably.\n\ncounty_data %&gt;%\n  arrange(desc(moe_pct)) %&gt;%\n  select(NAME, estimate, moe, moe_pct) %&gt;%\n  head(10)\n\n# A tibble: 10 × 4\n   NAME                          estimate   moe moe_pct\n   &lt;chr&gt;                            &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;\n 1 Somerset County, Maryland       164300 14949    9.10\n 2 Kent County, Maryland           307100 17782    5.79\n 3 Garrett County, Maryland        217000 10296    4.74\n 4 Dorchester County, Maryland     252300 11410    4.52\n 5 Talbot County, Maryland         398300 16471    4.14\n 6 Allegany County, Maryland       149200  5832    3.91\n 7 Worcester County, Maryland      348100 12766    3.67\n 8 Cecil County, Maryland          311800  8842    2.84\n 9 Caroline County, Maryland       272400  7506    2.76\n10 Queen Anne's County, Maryland   441800 10627    2.41\n\n\nThe county with the highest moe is Somerset County, Maryland. Its moe_pct is 9.098600%"
+  },
+  {
+    "objectID": "assignments/assignment2.html#sorting-counties-into-reliability-categories",
+    "href": "assignments/assignment2.html#sorting-counties-into-reliability-categories",
+    "title": "Assignment 2: Who Do We Know the Least About?",
+    "section": "Sorting counties into reliability categories",
+    "text": "Sorting counties into reliability categories\n\ncounty_data &lt;- county_data %&gt;%\n  mutate(reliability = case_when(\n    moe_pct &lt; 2  ~ \"High confidence\",\n    moe_pct &lt; 4 ~ \"Moderate\",\n    TRUE         ~ \"Low confidence\"\n  ))\n\ncount(county_data, reliability)\n\n# A tibble: 3 × 2\n  reliability         n\n  &lt;chr&gt;           &lt;int&gt;\n1 High confidence    12\n2 Low confidence      5\n3 Moderate            7\n\n\nHigh confidence reliability has 12 counties, Moderate has 7 counties and Low confidence has 5 counties"
+  },
+  {
+    "objectID": "assignments/assignment2.html#is-the-margin-of-error-bigger-in-small-places",
+    "href": "assignments/assignment2.html#is-the-margin-of-error-bigger-in-small-places",
+    "title": "Assignment 2: Who Do We Know the Least About?",
+    "section": "Is the margin of error bigger in small places?",
+    "text": "Is the margin of error bigger in small places?\nTo answer this we need population and our variable side by side, in the same row. That means a wide pull.\n\ncounty_wide &lt;- get_acs(\n  geography = \"county\",\n  variables = c(myvar = my_variable,\n                pop   = \"B01003_001\"),\n  state = my_state,\n  year = 2023,\n  survey = \"acs5\",\n  output = \"wide\"\n)\n\nhead(county_wide)\n\n# A tibble: 6 × 6\n  GEOID NAME                          myvarE myvarM   popE  popM\n  &lt;chr&gt; &lt;chr&gt;                          &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt;\n1 24001 Allegany County, Maryland     149200   5832  67762    NA\n2 24003 Anne Arundel County, Maryland 450300   4485 590936    NA\n3 24005 Baltimore County, Maryland    330000   3148 849586    NA\n4 24009 Calvert County, Maryland      440200   8554  93791    NA\n5 24011 Caroline County, Maryland     272400   7506  33406    NA\n6 24013 Carroll County, Maryland      406400   7074 174318    NA\n\n\n\ncounty_wide &lt;- county_wide %&gt;%\n  mutate(moe_pct = myvarM / myvarE * 100) %&gt;%\n  mutate(reliability = case_when(\n    moe_pct &lt; 2  ~ \"High confidence\",\n    moe_pct &lt; 4 ~ \"Moderate\",\n    TRUE         ~ \"Low confidence\"\n  ))\n\nNow compare the average population of counties in each reliability category.\n\ncounty_wide %&gt;%\n  group_by(reliability) %&gt;%\n  summarize(\n    n_counties = n(),\n    avg_population = mean(popE)\n  )\n\n# A tibble: 3 × 3\n  reliability     n_counties avg_population\n  &lt;chr&gt;                &lt;int&gt;          &lt;dbl&gt;\n1 High confidence         12        458292.\n2 Low confidence           5         28596.\n3 Moderate                 7         75465.\n\n\nHigh-confidence counties average about 458,000 people. That’s roughly 16 times more than low-confidence counties (about 29,000), with moderate counties in between at about 75,000. This matches what I expected: the ACS samples fewer households in smaller counties, so their estimates carry more uncertainty. Simply put, the most populated counties have the smallest margin of error and thus the highest confidence, and vice-versa"
+  },
+  {
+    "objectID": "assignments/assignment2.html#what-this-means-for-policy",
+    "href": "assignments/assignment2.html#what-this-means-for-policy",
+    "title": "Assignment 2: Who Do We Know the Least About?",
+    "section": "What this means for policy",
+    "text": "What this means for policy\nThe Maryland counties we know least about, statistically speaking, are Kent, Somerset, Garrett, and Dorchester. Each shows the highest moe_pct in the dataset, meaning their median home value estimates carry the largest margin of error relative to the estimate itself. This isn’t a coincidence: these are also the state’s least populated counties, and since the ACS is a sample survey, smaller counties yield smaller samples, which produces less statistically reliable estimates. Large, densely populated counties like Montgomery, Prince George’s, and Baltimore City, by contrast, are surveyed far more heavily and show much smaller margins of error.\nIf a state agency used median home value to allocate funding, for example, directing more support toward counties with lower home values and treated every county’s number as equally certain; the small, low-reliability counties would bear all the risk. If a county like Somerset’s true home value is actually higher than its shaky estimate suggests, it risks receiving too little funding relative to its real need. If the true value is actually lower, it risks receiving more than it needs, pulling funding away from counties that could use it more. Meanwhile, large counties like Montgomery are essentially unaffected by this risk, since their estimates are already precise. In short, the places we measure least reliably are exactly the places most likely to be misjudged when that data drives real decisions."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "Welcome to my portfolio for MUSA 5080: Public Policy Analytics at the University of Pennsylvania.\nThis site documents my work in the Master of Urban Spatial Analytics program — weekly notes, course assignments, and a final project applying data analysis to urban policy questions.\n\n\n\nI am a part designer, part climate detective, always chasing the question of how water, land, and cities can get along better. Trained as an architect, now deep in the world of landscape urbanism. Currently sharpening my data chops, because the future of design, she’d say, needs both a good eye and good numbers.Off the clock, she’s training for her next marathon, hunting down the best food in whatever city she’s in, and never says no to a good beer (❁´◡`❁)\n\n\n\n\nWeekly Notes — what I’m learning each week\nAssignments — analyses completed for the course\nAbout — more background and how to reach me\n\n\n\n\n\n\nEmail: gautamik@upenn.edu\nGitHub: @gautamik01"
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Home",
+    "section": "",
+    "text": "I am a part designer, part climate detective, always chasing the question of how water, land, and cities can get along better. Trained as an architect, now deep in the world of landscape urbanism. Currently sharpening my data chops, because the future of design, she’d say, needs both a good eye and good numbers.Off the clock, she’s training for her next marathon, hunting down the best food in whatever city she’s in, and never says no to a good beer (❁´◡`❁)"
+  },
+  {
+    "objectID": "index.html#what-youll-find-here",
+    "href": "index.html#what-youll-find-here",
+    "title": "Home",
+    "section": "",
+    "text": "Weekly Notes — what I’m learning each week\nAssignments — analyses completed for the course\nAbout — more background and how to reach me"
+  },
+  {
+    "objectID": "index.html#get-in-touch",
+    "href": "index.html#get-in-touch",
+    "title": "Home",
+    "section": "",
+    "text": "Email: gautamik@upenn.edu\nGitHub: @gautamik01"
+  },
+  {
+    "objectID": "weekly-notes/week-01.html",
+    "href": "weekly-notes/week-01.html",
+    "title": "Week 1: Getting Set Up",
+    "section": "",
+    "text": "We set up our new portfolio! Its live. Understand some theories abour Quarto, Git, Github, R studio and what a typical workflow looks like. Getting used to the interface and understand Save, render, commit, Push :P"
+  },
+  {
+    "objectID": "weekly-notes/week-01.html#what-we-did",
+    "href": "weekly-notes/week-01.html#what-we-did",
+    "title": "Week 1: Getting Set Up",
+    "section": "",
+    "text": "We set up our new portfolio! Its live. Understand some theories abour Quarto, Git, Github, R studio and what a typical workflow looks like. Getting used to the interface and understand Save, render, commit, Push :P"
+  },
+  {
+    "objectID": "weekly-notes/week-01.html#key-concepts",
+    "href": "weekly-notes/week-01.html#key-concepts",
+    "title": "Week 1: Getting Set Up",
+    "section": "Key Concepts",
+    "text": "Key Concepts\nThree places a file can live:\n\nMy computer — where I edit\nGitHub.com — where it’s stored\nMy live site — what the world sees\n\nThe loop: Edit → Save → Render → Commit → Push → wait → refresh"
+  },
+  {
+    "objectID": "weekly-notes/week-01.html#proving-r-works",
+    "href": "weekly-notes/week-01.html#proving-r-works",
+    "title": "Week 1: Getting Set Up",
+    "section": "Proving R Works",
+    "text": "Proving R Works\nThe chunk below runs when this page renders. If you can see a result underneath it on your published site, R and Quarto are talking to each other correctly.\n\nsessionInfo()$R.version$version.string\n\n[1] \"R version 4.6.1 (2026-06-24 ucrt)\""
+  },
+  {
+    "objectID": "weekly-notes/week-01.html#reflection",
+    "href": "weekly-notes/week-01.html#reflection",
+    "title": "Week 1: Getting Set Up",
+    "section": "Reflection",
+    "text": "Reflection\n\nWhat I want out of this course: How and where do we apply these tools. Its uses and possibilities. Also with AI how much of it is actually relevant. We can easily build a website from scratch and edit it.\nOne thing I’m nervous about: I am new to programming and understanding syntax."
+  },
+  {
+    "objectID": "weekly-notes/week-01.html#questions-i-still-have",
+    "href": "weekly-notes/week-01.html#questions-i-still-have",
+    "title": "Week 1: Getting Set Up",
+    "section": "Questions I Still Have",
+    "text": "Questions I Still Have\n\nWith AI how can we actually leverage the skill and not just surender?\nI am truly trying to understand what would be its applications and its possibilities?"
   }
 ]
