@@ -1,7 +1,8 @@
 ---
-title: "Assignment: Building Features, Watching What Happens"
+title: "Assignment 4: Building Features, Watching What Happens"
 subtitle: "MUSA 5080 · Predicting tract-level commute times in Philadelphia"
 author: "Gautami Kasat"
+date: today
 format:
   html:
     toc: true
