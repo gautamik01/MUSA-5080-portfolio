@@ -1,8 +1,8 @@
 ---
-title: "Verify the Claim: Philadelphia Poverty Change"
+title: "Assignment 3: Verify the Claim - Philadelphia Poverty Change"
 subtitle: "Testing if ACS data supports the 2018 news story"
-author: Gautami Kasat
-date: today
+author: "Gautami Kasat"
+date: "September 25, 2026"
 format:
   html:
     toc: true

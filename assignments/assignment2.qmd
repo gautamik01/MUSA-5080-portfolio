@@ -2,7 +2,7 @@
 title: "Assignment 2: Who Do We Know the Least About?"
 subtitle: "Measuring uncertainty in American Community Survey data"
 author: "Gautami Kasat"
-date: today
+date: "September 11, 2026"
 format:
   html:
     toc: true
